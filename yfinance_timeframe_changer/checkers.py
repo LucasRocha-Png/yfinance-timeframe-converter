@@ -6,14 +6,14 @@ def checks_if_data_exists(data):
     Checks if data is a DataFrame
     """
     if type(data) != pd.core.frame.DataFrame:
-        exception_message("Data is not a DataFrame!")
+        exception_message("The data passed is not a DataFrame!")
         
     if data.shape[0] == 0:
         exception_message("DataFrame has no rows!")
         
     columns = data.columns.to_list()
     if len(columns) == 0:
-        exception_message("Their is no columns on the DataFrame")
+        exception_message("There is no columns in the DataFrame")
     
     
     columns_available = ["Open", "High", "Low", "Close", "Adj Close", "Volume"]
@@ -24,7 +24,7 @@ def checks_if_data_exists(data):
         
 def checks_if_timeframe_exist(timeframe):
     """
-    Checks if timeframe exist
+    Checks if the timeframe exist
     """
     
     timeframes = ["1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo"]
@@ -42,7 +42,6 @@ def checks_if_timeframe_is_the_same_as_data(data, timeframe):
     index = data.index.astype(str).to_list()
     value = index[-1]
     
-    
     if len(value) == 10 and timeframe not in minutes_timeframe:
         pass
     
@@ -50,7 +49,7 @@ def checks_if_timeframe_is_the_same_as_data(data, timeframe):
         pass
     
     else:   
-        exception_message("Timeframe from the data probally is not the same as what was put in the arguments.") 
+        exception_message("The timeframe passed as argument probally is not the same as the DataFrame.") 
 
 def checks_if_input_is_lower_than_output(timeframe_input, timeframe_output):
     """
