@@ -4,6 +4,7 @@ Checks if all the dataframe is correct
 
 import pandas as pd
 from utils import excepetion_message
+import ctypes
 
 def basic_check(data):
     """
@@ -21,6 +22,7 @@ def basic_check(data):
         if type_ != float and type_ != int:
             excepetion_message(f"The values from {column} column is not allowed")
 
+    
     
 
 def checker(data, timeframe_input, timeframe_output):
