@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Werror -std=c++17 CMakeFiles/checkers.dir/main.cpp.o -o checkers  src/libchecker.a 

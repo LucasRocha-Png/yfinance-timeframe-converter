@@ -1,13 +1,15 @@
-from checker import checker, basic_check
+from checkers import checker, basic_check
 from format import format_data
+import pandas as pd
 
-def convert(data, timeframe_input, timeframe_output, check=True):
+def convert(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str, checking:bool = True) -> pd.core.frame.DataFrame:
 
-    basic_check(data)
+    if checking == True:
+        basic_check(data)
 
-    data = format_data(data)
+    data = format_data(data, timeframe_input, timeframe_output)
 
-    if check == True:
+    if checking == True:
         checker(data, timeframe_input, timeframe_output)
     
 
@@ -24,7 +26,7 @@ if __name__ == "__main__":
     start = time.time()
     
     for i in range(1):
-        convert(df, "1d", "1mo")
+        convert(df, "1d", "1mo", True)
 
     end = time.time()
     print(f"Total running:", round(end - start, 10))

@@ -1,8 +1,9 @@
 from utils import excepetion_message
+import pandas as pd
 import ctypes
 
 
-def format_row(row, type):
+def format_row(row: list, type: str) -> list:
     """
     Converts an row to the type setted
     """        
@@ -29,7 +30,7 @@ def format_row(row, type):
     return row  
 
 
-def format_data(data):
+def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str) -> list:
     """
     Formats data for a format that C++ accepts
     """
@@ -49,6 +50,9 @@ def format_data(data):
         values.extend(data[column])
     values = format_row(values, "float")
 
-    data = [index, columns, values]
+    timeframes = [timeframe_input, timeframe_output]
+    timeframes = format_row(timeframes, "string")
+
+    data = [index, columns, values, timeframes]
     return data
     

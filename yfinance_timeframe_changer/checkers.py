@@ -6,7 +6,7 @@ import pandas as pd
 from utils import excepetion_message
 import ctypes
 
-def basic_check(data):
+def basic_check(data: pd.core.frame.DataFrame) -> None:
     """
     Checks if it's a Pandas DataFrame, and if has rows to be converted
     """    
@@ -25,7 +25,7 @@ def basic_check(data):
     
     
 
-def checker(data, timeframe_input, timeframe_output):
+def checker(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str) -> None:
 
     """
     Checks if the DataFrame is able to be converted

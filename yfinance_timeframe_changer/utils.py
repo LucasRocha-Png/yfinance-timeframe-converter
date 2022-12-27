@@ -1,4 +1,6 @@
-def excepetion_message(message):
+import pandas as pd
+
+def excepetion_message(message: str) -> None:
     """
     Raises a excepetion message
     """
@@ -8,7 +10,7 @@ def excepetion_message(message):
     raise Exception(message)
 
 
-def download_dataframe(ticket = "AAPL", interval = "1d"):
+def download_dataframe(ticket: str = "AAPL", interval: str = "1d") -> pd.core.frame.DataFrame:
     """
     Calls a database using YFinance API. This function is usefull only for tests
     """
