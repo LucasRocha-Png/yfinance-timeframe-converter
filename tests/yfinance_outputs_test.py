@@ -6,7 +6,10 @@ def main():
     from pandas_datareader import data as pdr
     import yfinance as yf
     import pandas as pd    
+    import os
     
+    archive_folder = os.path.dirname(__file__)
+
     print("\n\n")
     print("-"*10)
     
@@ -18,7 +21,7 @@ def main():
     for period, interval in zip(periods, intervals):
         df = pdr.get_data_yahoo(ticket, period = period, group_by = 'ticker', interval = interval, threads = True, progress = False)
         print(f"{interval} downloaded!")
-        df.to_csv(f"output\\{interval}.csv")
+        df.to_csv(f"{archive_folder}/output/{interval}.csv")
     
     
     
