@@ -1,4 +1,5 @@
 from utils import excepetion_message
+from threading import Thread
 import pandas as pd
 import ctypes
 
@@ -25,7 +26,7 @@ def format_row(row: list, type: str) -> list:
         row = (ctypes.c_char_p * len(row))(*row)
 
     else:
-        excepetion_message(f"Type {type} not permitted!")
+        excepetion_message(message=f"Type {type} not permitted!")
 
     return row  
 
@@ -36,20 +37,20 @@ def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_o
     """
 
 
-    data = data.dropna(axis = 0)
+    data = data.dropna(axis=0)
     #data = data.fillna(0)
 
     index = data.index.astype(str).to_list()
-    index = format_row(index, "string")
+    index = format_row(row=index, type="string")
 
     columns = data.columns.to_list()
-    columns = format_row(columns, "string")
+    columns = format_row(row=columns, type="string")
 
     values = data.to_numpy().ravel(order='F').tolist() # Reshape dataframe
-    values = format_row(values, "double")
+    values = format_row(row=values, type="double")
 
     timeframes = [timeframe_input, timeframe_output]
-    timeframes = format_row(timeframes, "string")
+    timeframes = format_row(row=timeframes, type="string")
 
     data = [index, columns, values, timeframes]
     return data
