@@ -1,0 +1,2 @@
+/usr/bin/ar qc libchecker.a CMakeFiles/checker.dir/checker.cpp.o
+/usr/bin/ranlib libchecker.a
