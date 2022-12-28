@@ -45,10 +45,8 @@ def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_o
     columns = data.columns.to_list()
     columns = format_row(columns, "string")
 
-    values = []
-    for column in data.columns:
-        values.extend(data[column])
-    values = format_row(values, "float")
+    values = data.to_numpy().ravel(order='F').tolist() # Reshape dataframe
+    values = format_row(values, "double")
 
     timeframes = [timeframe_input, timeframe_output]
     timeframes = format_row(timeframes, "string")

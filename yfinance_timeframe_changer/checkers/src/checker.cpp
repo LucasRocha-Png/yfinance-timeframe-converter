@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <string>
 
@@ -8,7 +7,7 @@ int get_index(std::vector<std::string> list, std::string word){
         index++;
         if (word_ == word){return index;}
     }
-    return 0;
+    return -1;
 }
 
 
@@ -42,10 +41,25 @@ int checks_if_input_is_lower_than_output(std::vector<std::string> timeframes){
     int index_output = get_index(timeframes_available, timeframe_output);
 
     if (index_input > index_output){
-        return 2;
+        return 1;
     }
-
     else {
         return 0;
     }
+}
+
+int checks_if_columns_exists(std::vector<std::string> columns){
+    std::vector<std::string> columns_available = {"Open", "High", "Low", "Close", "Adj Close", "Volume"};
+    for (std::string column : columns){
+        int index = get_index(columns_available, column);
+        if (index == -1){
+            return 1;
+        }
+    }
+    return 0;
+}
+
+
+std::string checks_if_index_is_equal_than_timeframe(std::vector<std::string> index, std::string timeframe){
+    return timeframe;
 }

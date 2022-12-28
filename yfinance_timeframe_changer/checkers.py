@@ -38,9 +38,6 @@ cpp_checker.argtypes = [
                         ctypes.POINTER(ctypes.c_char_p),  # Columns names
                         ctypes.c_int,                     # Columns name len
 
-                        ctypes.POINTER(ctypes.c_float),  # Values
-                        ctypes.c_int,                     # Values len
-
                         ctypes.POINTER(ctypes.c_char_p)]  # Inputs
     
 
@@ -54,23 +51,18 @@ def checker(data: pd.core.frame.DataFrame) -> None:
     #[index, columns, values, timeframes]
     index = data[0]
     columns = data[1]
-    values = data[2]
     timeframes = data[3]
 
-    cpp_checker(
-                index,
-                len(index),
+    errors = cpp_checker(
+                        index,
+                        len(index),
 
-                columns,
-                len(columns),
+                        columns,
+                        len(columns),
 
-                values,
-                len(values),
+                        timeframes
+                        )
 
-                timeframes
-                )
-
-    pass
 
 if __name__ == "__main__":
 	pass
