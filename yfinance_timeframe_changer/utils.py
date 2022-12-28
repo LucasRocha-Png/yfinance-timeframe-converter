@@ -21,7 +21,7 @@ def download_dataframe(ticket: str = "AAPL", timeframe: str = "1d") -> pd.core.f
     periods = ["7d", "60d", "60d", "60d", "60d", "60d", "60d", "730d", "max", "max", "max" , "max", "max"]
 
     if timeframe not in timeframes:
-        excepetion_message(message=f"Period not available! Only accepts {timeframe}")
+        excepetion_message(f"Period not available! Only accepts {timeframe}")
 
     period = periods[timeframes.index(timeframe)]
 
@@ -29,7 +29,7 @@ def download_dataframe(ticket: str = "AAPL", timeframe: str = "1d") -> pd.core.f
         yf.pdr_override()  
         df = pdr.get_data_yahoo(tickers=ticket, period=period, group_by='ticker', interval=timeframe, threads=True, progress=False)
     except:
-        excepetion_message(message="Error when trying to download DataFrame")    
+        excepetion_message("Error when trying to download DataFrame")    
 
     return df    
 

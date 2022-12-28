@@ -1,18 +1,32 @@
+from converter import convert_timeframe
 from checkers import checker, basic_check
 from format import format_data
 import pandas as pd
 
 def convert(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str, checking:bool = True) -> pd.core.frame.DataFrame:
+    """
+    Converts YFinance DataFrame Timeframes
+    """
 
+    # If timeframe_input is the same as timeframe_output there is no reason to convert
+    if timeframe_input == timeframe_output:
+        return data
+
+    # Basic checking, if it is a DataFrame and if has rows
     if checking == True:
-        basic_check(data=data)
+        basic_check(data)
 
-    data = format_data(data=data, timeframe_input=timeframe_input, timeframe_output=timeframe_output)
+    # Formats pandas DataFrame to C++ datatype
+    data = format_data(data, timeframe_input, timeframe_output)
 
+    # Checks if the dataframe can be converted
     if checking == True:
-        checker(data=data)
+        checker(data)
 
-        
+    # Finally, converts timeframe
+    convert_timeframe(data)
+    
+
 
 
 
@@ -22,12 +36,12 @@ if __name__ == "__main__":
 
 
     timeframe = "1d"
-    df = download_dataframe(ticket="AAPL", timeframe=timeframe)
+    df = download_dataframe("AAPL", timeframe)
 
     start = time.time()
     
     for i in range(1):
-        convert(data=df, timeframe_input=timeframe, timeframe_output="1mo", checking=True)
+        convert(df, timeframe, "1mo", True)
 
     end = time.time()
     print(f"Total running:", round(end - start, 10))

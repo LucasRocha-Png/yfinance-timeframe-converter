@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <string>
 
@@ -10,7 +9,7 @@ extern "C"
     //[index, columns, values, timeframes]
     __attribute__((__visibility__("default"))) int* checker(char** index, int len_index, char** columns, int len_columns, char** timeframes){
 
-        // Converts values -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         // Index    
         std::vector<std::string> v_index(index, index+len_index);
 
@@ -19,7 +18,9 @@ extern "C"
 
         // Timeframe
         std::vector<std::string> v_timeframe(timeframes, timeframes+2);
+        // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
+        
 
         // Checks if values are correct -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         std::vector<int> list_error = {};
