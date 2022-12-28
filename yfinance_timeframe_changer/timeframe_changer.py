@@ -8,9 +8,10 @@ def convert(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_outpu
         basic_check(data)
 
     data = format_data(data, timeframe_input, timeframe_output)
+    #data = [index, columns, values, timeframes]
 
     if checking == True:
-        checker(data, timeframe_input, timeframe_output)
+        checker(data)
     
 
 
@@ -21,7 +22,6 @@ if __name__ == "__main__":
 
     # Downloads an database
     df = download_dataframe("AAPL", "1d")
-
 
     start = time.time()
     

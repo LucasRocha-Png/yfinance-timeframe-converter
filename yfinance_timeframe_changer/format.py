@@ -36,8 +36,8 @@ def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_o
     """
 
 
-    data = data.dropna(how="all")
-    data = data.fillna(0)
+    data = data.dropna(axis = 0)
+    #data = data.fillna(0)
 
     index = data.index.astype(str).to_list()
     index = format_row(index, "string")

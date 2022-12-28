@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/checkers.dir/main.cpp.o"
   "CMakeFiles/checkers.dir/main.cpp.o.d"
-  "checkers"
-  "checkers.pdb"
+  "libcheckers.pdb"
+  "libcheckers.so"
 )
 
 # Per-language clean rules from dependency scanning.

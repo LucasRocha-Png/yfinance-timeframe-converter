@@ -5,6 +5,7 @@ Checks if all the dataframe is correct
 import pandas as pd
 from utils import excepetion_message
 import ctypes
+import os
 
 def basic_check(data: pd.core.frame.DataFrame) -> None:
     """
@@ -23,13 +24,53 @@ def basic_check(data: pd.core.frame.DataFrame) -> None:
             excepetion_message(f"The values from {column} column is not allowed")
 
     
+	
+	
+	
+archive_folder = os.path.dirname(__file__)
+library = ctypes.CDLL(f"{archive_folder}/checkers/build/libcheckers.so")	
+
+cpp_checker = library.checker
+cpp_checker.argtypes = [
+                        ctypes.POINTER(ctypes.c_char_p),  # Index
+                        ctypes.c_int,                     # Index Len
+
+                        ctypes.POINTER(ctypes.c_char_p),  # Columns names
+                        ctypes.c_int,                     # Columns name len
+
+                        ctypes.POINTER(ctypes.c_float),  # Values
+                        ctypes.c_int,                     # Values len
+
+                        ctypes.POINTER(ctypes.c_char_p)]  # Inputs
     
 
-def checker(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str) -> None:
+
+def checker(data: pd.core.frame.DataFrame) -> None:
 
     """
     Checks if the DataFrame is able to be converted
     """
 
+    #[index, columns, values, timeframes]
+    index = data[0]
+    columns = data[1]
+    values = data[2]
+    timeframes = data[3]
+
+    cpp_checker(
+                index,
+                len(index),
+
+                columns,
+                len(columns),
+
+                values,
+                len(values),
+
+                timeframes
+                )
 
     pass
+
+if __name__ == "__main__":
+	pass
