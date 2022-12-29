@@ -2,12 +2,17 @@
 #include <string>
 
 #include "main.hpp"
-#include "module/checker.hpp"
+#include "module/timeframe_exists.hpp"
+#include "module/timeframe_equal_dataframe.hpp"
+#include "module/timeframe_lower.hpp"
+#include "module/columns.hpp"
+#include "module/conversion.hpp"
+
 
 extern "C"
 {
     //[index, columns, values, timeframes]
-    __declspec(dllexport) int* __cdecl checker(char** index, int len_index, char** columns, int len_columns, char** timeframes){
+    __declspec(dllexport) int* __cdecl checker(int* checker(char** index, int len_index, char** columns, int len_columns, char** timeframes){
 
         // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         // Index    
@@ -50,7 +55,7 @@ extern "C"
     }
 
 
-    __declspec(dllexport) void  __cdecl free_array(int* array){
+    __declspec(dllexport) void __cdecl free_array(int* array){
         delete[] array;
     }
 
