@@ -1,9 +1,6 @@
-"""
-Checks if all the dataframe is correct
-"""
-
-from utils.utils import exception_message
 from formater.formater import format_row_cpp_to_python
+from checkers.return_error import return_error_by_list
+from utils.utils import exception_message
 import pandas as pd
 import ctypes
 import sys
@@ -12,11 +9,12 @@ import os
 plataform = sys.platform
 archive_folder = os.path.dirname(__file__)
 
-if plataform != "win32":
-    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libcheckers.so")	
+if plataform == "win32":
+    exception_message("Module not available in Windows yet!")    
 else:
-    exception_message("App not available in Windows yet!")    
-
+    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libcheckers.so")	
+    
+# Imports function checker from cpp
 cpp_checker = library.checker
 cpp_checker.argtypes = [
                         ctypes.POINTER(ctypes.c_char_p),  # Index
@@ -29,63 +27,9 @@ cpp_checker.argtypes = [
     
 cpp_checker.restype = ctypes.POINTER(ctypes.c_int)
 
+# Imports function to free the memory from cpp
 free_array = library.free_array
 free_array.argtype = ctypes.POINTER(ctypes.c_int)
-
-
-def basic_check(data: pd.core.frame.DataFrame) -> None:
-    """
-    Checks if it's a Pandas DataFrame, and if has rows to be converted
-    """    
-
-    if type(data) != pd.core.frame.DataFrame:
-        exception_message("Data is not a available format! Data should be a Pandas DataFrame")
-
-    if data.shape[0] == 0 or data.shape[1] == 0:
-        exception_message("Data has no rows or columns!")
-
-    for column in data.columns:
-        type_ = data[column].dtype
-        if type_ != float and type_ != int:
-            exception_message(f"The values from {column} column is not allowed")
-
-
-def return_error(list_errors: list, data: pd.core.frame.DataFrame, timeframes: list) -> None:
-    """
-    Returns an error based on the list of errors
-    """
-
-    columns_available = ["Open", "High", "Low	Close", "Adj Close", "Volume"]
-    timeframes_available = ["1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo"]
-
-    # Convert Timeframes
-    timeframes = format_row_cpp_to_python(timeframes, 2, "string")
-
-    # Timeframe does not exists
-    if list_errors[0] == 1:
-        for timeframe in timeframes:
-            if timeframe not in timeframes_available:
-                exception_message(f"Timeframe {timeframe} does not exist!")
-
-    # Output timeframe is lower than input
-    if list_errors[1] == 1:
-        exception_message(f"Output timeframe {timeframes[1]} is lower than input timeframe {timeframes[0]}!")
-
-    # Columns doesn't exist
-    if list_errors[2] == 1:
-        for column in data.columns:
-            if column not in columns_available:
-                exception_message(f"Column {column} are not available to be converted yet!")
-
-    # Timeframe passed is not the same as timeframe
-    if list_errors[3] == 1:
-        exception_message(f"Timeframe {timeframes[0]} passed probally is not the same from timeframe!")    
-
-    # Convertion not available
-    if list_errors[4] == 1:
-        exception_message(f"Convertion from {timeframes[0]} to {timeframes[1]} is not available!")
-
-
 
 
 def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
@@ -117,7 +61,7 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
 
     # If there is an error, calls return error function
     if sum(list_errors) != 0:
-        return_error(list_errors, data, timeframes)
+        return_error_by_list(list_errors, data, timeframes)
 
     # Free memory of array
     free_array(errors)

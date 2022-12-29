@@ -7,10 +7,11 @@ plataform = sys.platform
 
 archive_folder = os.path.dirname(__file__)
 
-if plataform != "win32":
-    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libconvert_timeframe.so")	
+if plataform == "win32": 
+    exception_message("Module not available in Windows yet!")     	
 else:
-    exception_message("App not available in Windows yet!")        
+    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libconvert_timeframe.so")
+       
 
 cpp_convert_timeframe = library.convert_timeframe
 cpp_convert_timeframe.argtypes = [

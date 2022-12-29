@@ -1,5 +1,6 @@
 from converter.converter import convert_timeframe
-from checkers.checkers import checker, basic_check
+from checkers.basic_checker import basic_checker
+from checkers.checkers import checker
 from utils.utils import renames_timeframe
 from formater.formater import format_data
 import pandas as pd
@@ -17,7 +18,7 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
         return data
 
     if checking == True:
-        basic_check(data)
+        basic_checker(data)
 
     converted_data = format_data(data, timeframe_input, timeframe_output)
 
