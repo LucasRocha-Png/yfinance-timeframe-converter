@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module"
+CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build"
+CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ module/clean: module/CMakeFiles/checker.dir/clean
 CMakeFiles/checkers.dir/all: module/CMakeFiles/checker.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=3,4 "Built target checkers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" --progress-num=8,9 "Built target checkers"
 .PHONY : CMakeFiles/checkers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/checkers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/checkers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" 0
 .PHONY : CMakeFiles/checkers.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/checkers.dir/clean:
 module/CMakeFiles/checker.dir/all:
 	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/depend
 	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=1,2 "Built target checker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target checker"
 .PHONY : module/CMakeFiles/checker.dir/all
 
 # Build rule for subdir invocation for target.
 module/CMakeFiles/checker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/CMakeFiles/checker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" 0
 .PHONY : module/CMakeFiles/checker.dir/rule
 
 # Convenience name for target.

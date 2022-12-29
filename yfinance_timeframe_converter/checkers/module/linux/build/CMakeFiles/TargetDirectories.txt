@@ -1,6 +1,6 @@
-/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles/checkers.dir
-/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles/edit_cache.dir
-/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles/rebuild_cache.dir
-/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module/CMakeFiles/checker.dir
-/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module/CMakeFiles/edit_cache.dir
-/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module/CMakeFiles/rebuild_cache.dir
+/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles/checkers.dir
+/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles/edit_cache.dir
+/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles/rebuild_cache.dir
+/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/module/CMakeFiles/checker.dir
+/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/module/CMakeFiles/edit_cache.dir
+/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/module/CMakeFiles/rebuild_cache.dir

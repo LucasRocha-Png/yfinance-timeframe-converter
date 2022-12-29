@@ -2,7 +2,12 @@
 #include <string>
 
 #include "main.hpp"
-#include "module/checker.hpp"
+#include "module/timeframe_exists.hpp"
+#include "module/timeframe_equal_dataframe.hpp"
+#include "module/timeframe_lower.hpp"
+#include "module/columns.hpp"
+#include "module/conversion.hpp"
+
 
 extern "C"
 {

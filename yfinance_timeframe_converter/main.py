@@ -1,8 +1,8 @@
 from converter.converter import convert_timeframe
 from checkers.basic_checker import basic_checker
-from checkers.checkers import checker
-from utils.utils import renames_timeframe
 from formater.formater import format_data
+from utils.utils import renames_timeframe
+from checkers.checker import checker
 import pandas as pd
 
 
@@ -27,9 +27,6 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
 
     convert_timeframe(converted_data)
     
-
-
-
 
 if __name__ == "__main__":
     from utils.utils import download_dataframe
