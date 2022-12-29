@@ -157,7 +157,8 @@ module/CMakeFiles/checker.dir/columns.cpp.o: ../module/columns.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../module/utils.hpp
+  ../module/utils.hpp \
+  ../module/columns.hpp
 
 module/CMakeFiles/checker.dir/conversion.cpp.o: ../module/conversion.cpp \
   /usr/include/stdc-predef.h \
@@ -314,7 +315,8 @@ module/CMakeFiles/checker.dir/conversion.cpp.o: ../module/conversion.cpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../module/conversion.hpp
 
 module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o: ../module/timeframe_equal_dataframe.cpp \
   /usr/include/stdc-predef.h \
@@ -471,7 +473,8 @@ module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o: ../module/timefra
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../module/timeframe_equal_dataframe.hpp
 
 module/CMakeFiles/checker.dir/timeframe_exists.cpp.o: ../module/timeframe_exists.cpp \
   /usr/include/stdc-predef.h \
@@ -628,7 +631,8 @@ module/CMakeFiles/checker.dir/timeframe_exists.cpp.o: ../module/timeframe_exists
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../module/timeframe_exists.hpp
 
 module/CMakeFiles/checker.dir/timeframe_lower.cpp.o: ../module/timeframe_lower.cpp \
   /usr/include/stdc-predef.h \
@@ -786,7 +790,8 @@ module/CMakeFiles/checker.dir/timeframe_lower.cpp.o: ../module/timeframe_lower.c
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../module/utils.hpp
+  ../module/utils.hpp \
+  ../module/timeframe_lower.hpp
 
 module/CMakeFiles/checker.dir/utils.cpp.o: ../module/utils.cpp \
   /usr/include/stdc-predef.h \
@@ -943,10 +948,17 @@ module/CMakeFiles/checker.dir/utils.cpp.o: ../module/utils.cpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../module/utils.hpp
 
+
+../module/timeframe_lower.hpp:
+
+../module/timeframe_exists.hpp:
 
 ../module/timeframe_equal_dataframe.cpp:
+
+../module/conversion.hpp:
 
 ../module/conversion.cpp:
 
@@ -979,6 +991,8 @@ module/CMakeFiles/checker.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+../module/columns.hpp:
 
 /usr/include/endian.h:
 
@@ -1195,6 +1209,8 @@ module/CMakeFiles/checker.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/cctype:
+
+../module/timeframe_equal_dataframe.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 

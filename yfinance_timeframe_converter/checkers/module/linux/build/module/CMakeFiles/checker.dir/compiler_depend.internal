@@ -159,6 +159,7 @@ module/CMakeFiles/checker.dir/columns.cpp.o
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/utils.hpp
+ /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/columns.hpp
 
 module/CMakeFiles/checker.dir/conversion.cpp.o
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/conversion.cpp
@@ -317,6 +318,7 @@ module/CMakeFiles/checker.dir/conversion.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
+ /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/conversion.hpp
 
 module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/timeframe_equal_dataframe.cpp
@@ -475,6 +477,7 @@ module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
+ /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/timeframe_equal_dataframe.hpp
 
 module/CMakeFiles/checker.dir/timeframe_exists.cpp.o
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/timeframe_exists.cpp
@@ -633,6 +636,7 @@ module/CMakeFiles/checker.dir/timeframe_exists.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
+ /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/timeframe_exists.hpp
 
 module/CMakeFiles/checker.dir/timeframe_lower.cpp.o
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/timeframe_lower.cpp
@@ -792,6 +796,7 @@ module/CMakeFiles/checker.dir/timeframe_lower.cpp.o
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/utils.hpp
+ /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/timeframe_lower.hpp
 
 module/CMakeFiles/checker.dir/utils.cpp.o
  /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/utils.cpp
@@ -950,4 +955,5 @@ module/CMakeFiles/checker.dir/utils.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
+ /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/module/utils.hpp
 

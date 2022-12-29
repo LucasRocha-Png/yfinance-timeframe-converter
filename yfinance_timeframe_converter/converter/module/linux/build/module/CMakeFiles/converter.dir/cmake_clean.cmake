@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/converter.dir/converter.cpp.o"
   "CMakeFiles/converter.dir/converter.cpp.o.d"
+  "CMakeFiles/converter.dir/index.cpp.o"
+  "CMakeFiles/converter.dir/index.cpp.o.d"
   "libconverter.a"
   "libconverter.pdb"
 )

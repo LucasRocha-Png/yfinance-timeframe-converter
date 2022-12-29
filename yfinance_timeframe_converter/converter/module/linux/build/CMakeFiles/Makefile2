@@ -54,58 +54,58 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter"
+CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build"
+CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/convert_timeframe.dir/all
-all: src/all
+all: module/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/preinstall
+preinstall: module/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/convert_timeframe.dir/clean
-clean: src/clean
+clean: module/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src
+# Directory level rules for directory module
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/converter.dir/all
-.PHONY : src/all
+module/all: module/CMakeFiles/converter.dir/all
+.PHONY : module/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
-.PHONY : src/preinstall
+module/preinstall:
+.PHONY : module/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/converter.dir/clean
-.PHONY : src/clean
+module/clean: module/CMakeFiles/converter.dir/clean
+.PHONY : module/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/convert_timeframe.dir
 
 # All Build rule for target.
-CMakeFiles/convert_timeframe.dir/all: src/CMakeFiles/converter.dir/all
+CMakeFiles/convert_timeframe.dir/all: module/CMakeFiles/converter.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert_timeframe.dir/build.make CMakeFiles/convert_timeframe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert_timeframe.dir/build.make CMakeFiles/convert_timeframe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build/CMakeFiles" --progress-num=1,2 "Built target convert_timeframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/CMakeFiles" --progress-num=1,2 "Built target convert_timeframe"
 .PHONY : CMakeFiles/convert_timeframe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/convert_timeframe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/CMakeFiles" 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/convert_timeframe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/CMakeFiles" 0
 .PHONY : CMakeFiles/convert_timeframe.dir/rule
 
 # Convenience name for target.
@@ -118,30 +118,30 @@ CMakeFiles/convert_timeframe.dir/clean:
 .PHONY : CMakeFiles/convert_timeframe.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/converter.dir
+# Target rules for target module/CMakeFiles/converter.dir
 
 # All Build rule for target.
-src/CMakeFiles/converter.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/converter.dir/build.make src/CMakeFiles/converter.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/converter.dir/build.make src/CMakeFiles/converter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build/CMakeFiles" --progress-num=3,4 "Built target converter"
-.PHONY : src/CMakeFiles/converter.dir/all
+module/CMakeFiles/converter.dir/all:
+	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/depend
+	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/CMakeFiles" --progress-num=3,4,5 "Built target converter"
+.PHONY : module/CMakeFiles/converter.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/converter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/converter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-changer/yfinance_timeframe_changer/converter/build/CMakeFiles" 0
-.PHONY : src/CMakeFiles/converter.dir/rule
+module/CMakeFiles/converter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/CMakeFiles/converter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/CMakeFiles" 0
+.PHONY : module/CMakeFiles/converter.dir/rule
 
 # Convenience name for target.
-converter: src/CMakeFiles/converter.dir/rule
+converter: module/CMakeFiles/converter.dir/rule
 .PHONY : converter
 
 # clean rule for target.
-src/CMakeFiles/converter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/converter.dir/build.make src/CMakeFiles/converter.dir/clean
-.PHONY : src/CMakeFiles/converter.dir/clean
+module/CMakeFiles/converter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/clean
+.PHONY : module/CMakeFiles/converter.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

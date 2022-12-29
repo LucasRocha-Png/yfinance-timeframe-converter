@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include "conversion.hpp"
 
 int checks_if_convertion_is_valid(std::vector<std::string>& timeframes){
     std::string timeframe_input = timeframes[0];

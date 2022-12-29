@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
 #include "utils.hpp"
-
+#include "timeframe_lower.hpp"
 
 int checks_if_input_is_lower_than_output(std::vector<std::string>& timeframes){
     std::vector<std::string> timeframes_available = {"1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo"};
