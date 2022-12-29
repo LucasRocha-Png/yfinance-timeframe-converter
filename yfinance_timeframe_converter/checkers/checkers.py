@@ -10,7 +10,7 @@ import os
 
 
 archive_folder = os.path.dirname(__file__)
-library = ctypes.CDLL(f"{archive_folder}/module/build/libcheckers.so")	
+library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libcheckers.so")	
 
 cpp_checker = library.checker
 cpp_checker.argtypes = [
