@@ -1,8 +1,16 @@
+from utils.utils import exception_message
 import ctypes
+import sys
 import os
 
+plataform = sys.platform
+
 archive_folder = os.path.dirname(__file__)
-library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libconvert_timeframe.so")	
+
+if plataform != "win32":
+    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libconvert_timeframe.so")	
+else:
+    exception_message("App not available in Windows yet!")        
 
 cpp_convert_timeframe = library.convert_timeframe
 cpp_convert_timeframe.argtypes = [
@@ -25,3 +33,4 @@ def convert_timeframe(data: list):
     timeframes = data[3]
 
     cpp_convert_timeframe(index, len(index), columns, len(columns), values, len(values), timeframes)
+    

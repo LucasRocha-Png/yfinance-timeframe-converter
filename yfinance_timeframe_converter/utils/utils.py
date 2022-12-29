@@ -2,7 +2,7 @@ from pandas_datareader import data as pdr
 import yfinance as yf
 import pandas as pd
 
-def excepetion_message(message: str) -> None:
+def exception_message(message: str) -> None:
     """
     Raises a excepetion message
     """
@@ -21,7 +21,7 @@ def download_dataframe(ticket: str = "AAPL", timeframe: str = "1d") -> pd.core.f
     periods = ["7d", "60d", "60d", "60d", "60d", "60d", "60d", "730d", "max", "max", "max" , "max", "max"]
 
     if timeframe not in timeframes:
-        excepetion_message(f"Period {timeframe} not available! Only accepts {timeframes}")
+        exception_message(f"Period {timeframe} not available! Only accepts {timeframes}")
 
     period = periods[timeframes.index(timeframe)]
 
@@ -29,7 +29,7 @@ def download_dataframe(ticket: str = "AAPL", timeframe: str = "1d") -> pd.core.f
         yf.pdr_override()  
         df = pdr.get_data_yahoo(tickers=ticket, period=period, group_by='ticker', interval=timeframe, threads=True, progress=False)
     except:
-        excepetion_message("Error when trying to download DataFrame")    
+        exception_message("Error when trying to download DataFrame")    
 
     return df    
 

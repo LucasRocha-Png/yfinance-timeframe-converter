@@ -1,4 +1,4 @@
-from utils.utils import excepetion_message
+from utils.utils import exception_message
 import pandas as pd
 import ctypes
 
@@ -32,7 +32,7 @@ def format_row_python_to_cpp(row: list, type: str) -> list:
         row = (ctypes.c_char_p * len(row))(*row)
 
     else:
-        excepetion_message(f"Type {type} can't be formated!")
+        exception_message(f"Type {type} can't be formated!")
 
     return row  
 

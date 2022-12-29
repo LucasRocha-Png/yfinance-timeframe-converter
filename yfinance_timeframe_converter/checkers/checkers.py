@@ -2,15 +2,20 @@
 Checks if all the dataframe is correct
 """
 
-from utils.utils import excepetion_message
+from utils.utils import exception_message
 from formater.formater import format_row_cpp_to_python
 import pandas as pd
 import ctypes
+import sys
 import os
 
-
+plataform = sys.platform
 archive_folder = os.path.dirname(__file__)
-library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libcheckers.so")	
+
+if plataform != "win32":
+    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libcheckers.so")	
+else:
+    exception_message("App not available in Windows yet!")    
 
 cpp_checker = library.checker
 cpp_checker.argtypes = [
@@ -34,15 +39,15 @@ def basic_check(data: pd.core.frame.DataFrame) -> None:
     """    
 
     if type(data) != pd.core.frame.DataFrame:
-        excepetion_message("Data is not a available format! Data should be a Pandas DataFrame")
+        exception_message("Data is not a available format! Data should be a Pandas DataFrame")
 
     if data.shape[0] == 0 or data.shape[1] == 0:
-        excepetion_message("Data has no rows or columns!")
+        exception_message("Data has no rows or columns!")
 
     for column in data.columns:
         type_ = data[column].dtype
         if type_ != float and type_ != int:
-            excepetion_message(f"The values from {column} column is not allowed")
+            exception_message(f"The values from {column} column is not allowed")
 
 
 def return_error(list_errors: list, data: pd.core.frame.DataFrame, timeframes: list) -> None:
@@ -60,25 +65,25 @@ def return_error(list_errors: list, data: pd.core.frame.DataFrame, timeframes: l
     if list_errors[0] == 1:
         for timeframe in timeframes:
             if timeframe not in timeframes_available:
-                excepetion_message(f"Timeframe {timeframe} does not exist!")
+                exception_message(f"Timeframe {timeframe} does not exist!")
 
     # Output timeframe is lower than input
     if list_errors[1] == 1:
-        excepetion_message(f"Output timeframe {timeframes[1]} is lower than input timeframe {timeframes[0]}!")
+        exception_message(f"Output timeframe {timeframes[1]} is lower than input timeframe {timeframes[0]}!")
 
     # Columns doesn't exist
     if list_errors[2] == 1:
         for column in data.columns:
             if column not in columns_available:
-                excepetion_message(f"Column {column} are not available to be converted yet!")
+                exception_message(f"Column {column} are not available to be converted yet!")
 
     # Timeframe passed is not the same as timeframe
     if list_errors[3] == 1:
-        excepetion_message(f"Timeframe {timeframes[0]} passed probally is not the same from timeframe!")    
+        exception_message(f"Timeframe {timeframes[0]} passed probally is not the same from timeframe!")    
 
     # Convertion not available
     if list_errors[4] == 1:
-        excepetion_message(f"Convertion from {timeframes[0]} to {timeframes[1]} is not available!")
+        exception_message(f"Convertion from {timeframes[0]} to {timeframes[1]} is not available!")
 
 
 
