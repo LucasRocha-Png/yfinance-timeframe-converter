@@ -10,7 +10,7 @@ import os
 
 
 archive_folder = os.path.dirname(__file__)
-library = ctypes.CDLL(f"{archive_folder}/src/build/libcheckers.so")	
+library = ctypes.CDLL(f"{archive_folder}/module/build/libcheckers.so")	
 
 cpp_checker = library.checker
 cpp_checker.argtypes = [
@@ -54,13 +54,7 @@ def return_error(list_errors: list, data: pd.core.frame.DataFrame, timeframes: l
     timeframes_available = ["1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo"]
 
     # Convert Timeframes
-    converted_timeframes = []
-    for value in timeframes:
-        if value != None:
-            converted_timeframes.append(str(value, "UTF-8"))   
-        if 2 == len(converted_timeframes):
-            break
-    timeframes = converted_timeframes
+    timeframes = format_row_cpp_to_python(timeframes, 2, "string")
 
     # Timeframe does not exists
     if list_errors[0] == 1:
@@ -69,18 +63,25 @@ def return_error(list_errors: list, data: pd.core.frame.DataFrame, timeframes: l
                 excepetion_message(f"Timeframe {timeframe} does not exist!")
 
     # Output timeframe is lower than input
-    elif list_errors[1] == 1:
+    if list_errors[1] == 1:
         excepetion_message(f"Output timeframe {timeframes[1]} is lower than input timeframe {timeframes[0]}!")
 
     # Columns doesn't exist
-    elif list_errors[2] == 1:
+    if list_errors[2] == 1:
         for column in data.columns:
             if column not in columns_available:
                 excepetion_message(f"Column {column} are not available to be converted yet!")
 
     # Timeframe passed is not the same as timeframe
-    elif list_errors[3] == 1:
+    if list_errors[3] == 1:
         excepetion_message(f"Timeframe {timeframes[0]} passed probally is not the same from timeframe!")    
+
+    # Convertion not available
+    if list_errors[4] == 1:
+        excepetion_message(f"Convertion from {timeframes[0]} to {timeframes[1]} is not available!")
+
+
+
 
 def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
 
@@ -92,7 +93,8 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
     checks_if_timeframes_exists,
     checks_if_input_is_lower_than_output,
     checks_if_columns_exists,
-    checks_if_index_is_equal_than_timeframe.
+    checks_if_index_is_equal_than_timeframe,
+    checks_if_convertion_is_valid
     """
 
     #[index, columns, values, timeframes]
@@ -101,15 +103,12 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
     timeframes = converted_data[3]
 
     errors = cpp_checker(
-                    index,       # Index
-                    len(index),  # Index Len
-                    columns,     # Columns
-                    len(columns),# Columns len
-                    timeframes   # Timeframes
+                    index, len(index),  
+                    columns, len(columns),
+                    timeframes   
                     )
 
-    list_errors = format_row_cpp_to_python(errors, 4, "int") # To convert C++ array to Python array, must slice cpp array by the total len 
-
+    list_errors = format_row_cpp_to_python(errors, 5, "int")
 
     # If there is an error, calls return error function
     if sum(list_errors) != 0:

@@ -33,4 +33,12 @@ def download_dataframe(ticket: str = "AAPL", timeframe: str = "1d") -> pd.core.f
 
     return df    
 
-    
+def renames_timeframe(timeframe: str) -> str:
+    """
+    Renames timeframe from 60m to 1h
+    """
+
+    if timeframe == "60m":
+        return "1h"
+
+    return timeframe    

@@ -6,6 +6,13 @@ import ctypes
 def format_row_python_to_cpp(row: list, type: str) -> list:
     """
     Formats an python row to C++ row
+
+    Types available:
+        string
+        float
+        bool
+        int
+        double
     """        
     
     if type == "float":
@@ -32,6 +39,13 @@ def format_row_python_to_cpp(row: list, type: str) -> list:
 def format_row_cpp_to_python(row: list, len_row: int, type: str) -> list:
     """
     Formats a C++ row to Python Row
+
+    Types available:
+        string
+        float
+        bool
+        int
+        double
     """
 
     new_row = []
@@ -51,7 +65,7 @@ def format_row_cpp_to_python(row: list, len_row: int, type: str) -> list:
 
 def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str) -> list:
     """
-    Formats data for a format that C++ accepts
+    Formats DataFrame to a format that C++ accepts
     """
 
 

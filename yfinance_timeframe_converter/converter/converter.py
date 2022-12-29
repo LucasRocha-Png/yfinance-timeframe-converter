@@ -2,7 +2,7 @@ import ctypes
 import os
 
 archive_folder = os.path.dirname(__file__)
-library = ctypes.CDLL(f"{archive_folder}/src/build/libconvert_timeframe.so")	
+library = ctypes.CDLL(f"{archive_folder}/module/build/libconvert_timeframe.so")	
 
 cpp_convert_timeframe = library.convert_timeframe
 cpp_convert_timeframe.argtypes = [

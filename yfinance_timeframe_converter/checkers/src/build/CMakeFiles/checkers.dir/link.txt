@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -Wall -Werror -std=c++17 -shared -Wl,-soname,libcheckers.so -o libcheckers.so CMakeFiles/checkers.dir/main.cpp.o  src/libchecker.a 
