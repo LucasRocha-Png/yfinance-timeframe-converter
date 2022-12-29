@@ -1,4 +1,4 @@
-from src.timeframe_changer import timeframe_converter
+from timeframe_converter import timeframe_converter
 
 VERSION = (1, 0, 0)
 
