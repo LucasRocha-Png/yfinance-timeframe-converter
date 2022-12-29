@@ -3,8 +3,8 @@ Checks if all the dataframe is correct
 """
 
 from utils.utils import excepetion_message
+from formater.formater import format_row_cpp_to_python
 import pandas as pd
-import numpy as np
 import ctypes
 import os
 
@@ -45,20 +45,44 @@ def basic_check(data: pd.core.frame.DataFrame) -> None:
             excepetion_message(f"The values from {column} column is not allowed")
 
 
-def return_error(list_errors):
+def return_error(list_errors: list, data: pd.core.frame.DataFrame, timeframes: list) -> None:
+    """
+    Returns an error based on the list of errors
+    """
+
+    columns_available = ["Open", "High", "Low	Close", "Adj Close", "Volume"]
+    timeframes_available = ["1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo"]
+
+    # Convert Timeframes
+    converted_timeframes = []
+    for value in timeframes:
+        if value != None:
+            converted_timeframes.append(str(value, "UTF-8"))   
+        if 2 == len(converted_timeframes):
+            break
+    timeframes = converted_timeframes
+
+    # Timeframe does not exists
     if list_errors[0] == 1:
-        excepetion_message("Timeframe does not exist!")
+        for timeframe in timeframes:
+            if timeframe not in timeframes_available:
+                excepetion_message(f"Timeframe {timeframe} does not exist!")
 
+    # Output timeframe is lower than input
     elif list_errors[1] == 1:
-        excepetion_message("Input timeframe is lower than timeframe output!")
+        excepetion_message(f"Output timeframe {timeframes[1]} is lower than input timeframe {timeframes[0]}!")
 
+    # Columns doesn't exist
     elif list_errors[2] == 1:
-        excepetion_message("Column doesn't exist!")
+        for column in data.columns:
+            if column not in columns_available:
+                excepetion_message(f"Column {column} are not available to be converted yet!")
 
+    # Timeframe passed is not the same as timeframe
     elif list_errors[3] == 1:
-        excepetion_message("Timeframe passed is not the same from timeframe!")    
+        excepetion_message(f"Timeframe {timeframes[0]} passed probally is not the same from timeframe!")    
 
-def checker(data: list) -> None:
+def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
 
     """
     Checks if the DataFrame is able to be converted
@@ -72,9 +96,9 @@ def checker(data: list) -> None:
     """
 
     #[index, columns, values, timeframes]
-    index = data[0]
-    columns = data[1]
-    timeframes = data[3]
+    index = converted_data[0]
+    columns = converted_data[1]
+    timeframes = converted_data[3]
 
     errors = cpp_checker(
                     index,       # Index
@@ -84,11 +108,12 @@ def checker(data: list) -> None:
                     timeframes   # Timeframes
                     )
 
-    list_errors = errors[:4] # To convert C++ array to Python array, must slice cpp array by the total len 
+    list_errors = format_row_cpp_to_python(errors, 4, "int") # To convert C++ array to Python array, must slice cpp array by the total len 
+
 
     # If there is an error, calls return error function
     if sum(list_errors) != 0:
-        return_error(list_errors)
+        return_error(list_errors, data, timeframes)
 
     # Free memory of array
     free_array(errors)

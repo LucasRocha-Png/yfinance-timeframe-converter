@@ -10,7 +10,7 @@ def main():
     
     archive_folder = os.path.dirname(__file__)
 
-    print("\n\n")
+    print("\n")
     print("-"*10)
     
     ticket = "AAPL"

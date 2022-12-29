@@ -20,16 +20,16 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
 
 
     # Formats pandas DataFrame to C++ datatype
-    data = format_data(data, timeframe_input, timeframe_output)
+    converted_data = format_data(data, timeframe_input, timeframe_output)
 
 
     # Checks if the dataframe can be converted
     if checking == True:
-        checker(data)
+        checker(converted_data, data)
 
 
     # Finally, converts timeframe
-    convert_timeframe(data)
+    convert_timeframe(converted_data)
     
 
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     start = time.time()
     
-    for i in range(1):
+    for i in range(500):
         timeframe_converter(df, timeframe, "1mo", True)
 
     end = time.time()
