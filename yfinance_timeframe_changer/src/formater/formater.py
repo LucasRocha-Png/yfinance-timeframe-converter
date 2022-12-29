@@ -1,4 +1,4 @@
-from utils import excepetion_message
+from utils.utils import excepetion_message
 import pandas as pd
 import ctypes
 

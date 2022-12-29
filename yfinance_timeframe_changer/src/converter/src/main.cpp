@@ -17,6 +17,7 @@ extern "C"{
         // Timeframe
         std::vector<std::string> v_timeframe(timeframes, timeframes+2);
         // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        
 
     }
 }

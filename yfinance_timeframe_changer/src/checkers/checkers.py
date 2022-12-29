@@ -2,7 +2,7 @@
 Checks if all the dataframe is correct
 """
 
-from utils import excepetion_message
+from utils.utils import excepetion_message
 import pandas as pd
 import numpy as np
 import ctypes
@@ -10,7 +10,7 @@ import os
 
 
 archive_folder = os.path.dirname(__file__)
-library = ctypes.CDLL(f"{archive_folder}/checkers/build/libcheckers.so")	
+library = ctypes.CDLL(f"{archive_folder}/src/build/libcheckers.so")	
 
 cpp_checker = library.checker
 cpp_checker.argtypes = [
