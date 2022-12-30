@@ -175,10 +175,10 @@ CMakeFiles/convert_timeframe.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/streambuf.tcc \
   ../main.hpp \
   ../module/converter.hpp \
-  ../module/index.hpp
+  ../module/utils.hpp
 
 
-../module/index.hpp:
+../module/utils.hpp:
 
 ../main.hpp:
 

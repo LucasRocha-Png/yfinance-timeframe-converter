@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/main.cpp" "CMakeFiles/convert_timeframe.dir/main.cpp.o" "gcc" "CMakeFiles/convert_timeframe.dir/main.cpp.o.d"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/main.cpp" "CMakeFiles/convert_timeframe.dir/main.cpp.o" "gcc" "CMakeFiles/convert_timeframe.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/build/module/CMakeFiles/converter.dir/DependInfo.cmake"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/module/CMakeFiles/converter.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

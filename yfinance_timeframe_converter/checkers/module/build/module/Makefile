@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux"
+CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build"
+CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/module//CMakeFiles/progress.marks"
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build/CMakeFiles" 0
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module//CMakeFiles/progress.marks"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/clean
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/preinstall
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/preinstall
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 module/CMakeFiles/checker.dir/rule:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/CMakeFiles/checker.dir/rule
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/CMakeFiles/checker.dir/rule
 .PHONY : module/CMakeFiles/checker.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ checker: module/CMakeFiles/checker.dir/rule
 
 # fast build rule for target.
 checker/fast:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/build
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/build
 .PHONY : checker/fast
 
 columns.o: columns.cpp.o
@@ -135,7 +135,7 @@ columns.o: columns.cpp.o
 
 # target to build an object file
 columns.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/columns.cpp.o
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/columns.cpp.o
 .PHONY : columns.cpp.o
 
 columns.i: columns.cpp.i
@@ -143,7 +143,7 @@ columns.i: columns.cpp.i
 
 # target to preprocess a source file
 columns.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/columns.cpp.i
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/columns.cpp.i
 .PHONY : columns.cpp.i
 
 columns.s: columns.cpp.s
@@ -151,7 +151,7 @@ columns.s: columns.cpp.s
 
 # target to generate assembly for a file
 columns.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/columns.cpp.s
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/columns.cpp.s
 .PHONY : columns.cpp.s
 
 conversion.o: conversion.cpp.o
@@ -159,7 +159,7 @@ conversion.o: conversion.cpp.o
 
 # target to build an object file
 conversion.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.o
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.o
 .PHONY : conversion.cpp.o
 
 conversion.i: conversion.cpp.i
@@ -167,7 +167,7 @@ conversion.i: conversion.cpp.i
 
 # target to preprocess a source file
 conversion.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.i
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.i
 .PHONY : conversion.cpp.i
 
 conversion.s: conversion.cpp.s
@@ -175,7 +175,7 @@ conversion.s: conversion.cpp.s
 
 # target to generate assembly for a file
 conversion.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.s
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.s
 .PHONY : conversion.cpp.s
 
 timeframe_equal_dataframe.o: timeframe_equal_dataframe.cpp.o
@@ -183,7 +183,7 @@ timeframe_equal_dataframe.o: timeframe_equal_dataframe.cpp.o
 
 # target to build an object file
 timeframe_equal_dataframe.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o
 .PHONY : timeframe_equal_dataframe.cpp.o
 
 timeframe_equal_dataframe.i: timeframe_equal_dataframe.cpp.i
@@ -191,7 +191,7 @@ timeframe_equal_dataframe.i: timeframe_equal_dataframe.cpp.i
 
 # target to preprocess a source file
 timeframe_equal_dataframe.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.i
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.i
 .PHONY : timeframe_equal_dataframe.cpp.i
 
 timeframe_equal_dataframe.s: timeframe_equal_dataframe.cpp.s
@@ -199,7 +199,7 @@ timeframe_equal_dataframe.s: timeframe_equal_dataframe.cpp.s
 
 # target to generate assembly for a file
 timeframe_equal_dataframe.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.s
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.s
 .PHONY : timeframe_equal_dataframe.cpp.s
 
 timeframe_exists.o: timeframe_exists.cpp.o
@@ -207,7 +207,7 @@ timeframe_exists.o: timeframe_exists.cpp.o
 
 # target to build an object file
 timeframe_exists.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_exists.cpp.o
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_exists.cpp.o
 .PHONY : timeframe_exists.cpp.o
 
 timeframe_exists.i: timeframe_exists.cpp.i
@@ -215,7 +215,7 @@ timeframe_exists.i: timeframe_exists.cpp.i
 
 # target to preprocess a source file
 timeframe_exists.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_exists.cpp.i
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_exists.cpp.i
 .PHONY : timeframe_exists.cpp.i
 
 timeframe_exists.s: timeframe_exists.cpp.s
@@ -223,7 +223,7 @@ timeframe_exists.s: timeframe_exists.cpp.s
 
 # target to generate assembly for a file
 timeframe_exists.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_exists.cpp.s
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_exists.cpp.s
 .PHONY : timeframe_exists.cpp.s
 
 timeframe_lower.o: timeframe_lower.cpp.o
@@ -231,7 +231,7 @@ timeframe_lower.o: timeframe_lower.cpp.o
 
 # target to build an object file
 timeframe_lower.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_lower.cpp.o
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_lower.cpp.o
 .PHONY : timeframe_lower.cpp.o
 
 timeframe_lower.i: timeframe_lower.cpp.i
@@ -239,7 +239,7 @@ timeframe_lower.i: timeframe_lower.cpp.i
 
 # target to preprocess a source file
 timeframe_lower.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_lower.cpp.i
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_lower.cpp.i
 .PHONY : timeframe_lower.cpp.i
 
 timeframe_lower.s: timeframe_lower.cpp.s
@@ -247,7 +247,7 @@ timeframe_lower.s: timeframe_lower.cpp.s
 
 # target to generate assembly for a file
 timeframe_lower.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_lower.cpp.s
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/timeframe_lower.cpp.s
 .PHONY : timeframe_lower.cpp.s
 
 utils.o: utils.cpp.o
@@ -255,7 +255,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/utils.cpp.o
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -263,7 +263,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/utils.cpp.i
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -271,7 +271,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/utils.cpp.s
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -312,6 +312,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/linux/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

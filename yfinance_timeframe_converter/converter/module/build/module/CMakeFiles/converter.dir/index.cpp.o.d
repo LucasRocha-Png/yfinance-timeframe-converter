@@ -1,5 +1,5 @@
 module/CMakeFiles/converter.dir/index.cpp.o: \
- /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/module/index.cpp \
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/index.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -132,4 +132,6 @@ module/CMakeFiles/converter.dir/index.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/module/index.hpp
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/index.hpp \
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/minutes.hpp \
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/utils.hpp

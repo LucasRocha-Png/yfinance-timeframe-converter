@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/module/converter.cpp" "module/CMakeFiles/converter.dir/converter.cpp.o" "gcc" "module/CMakeFiles/converter.dir/converter.cpp.o.d"
-  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/linux/module/index.cpp" "module/CMakeFiles/converter.dir/index.cpp.o" "gcc" "module/CMakeFiles/converter.dir/index.cpp.o.d"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/converter.cpp" "module/CMakeFiles/converter.dir/converter.cpp.o" "gcc" "module/CMakeFiles/converter.dir/converter.cpp.o.d"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/minutes.cpp" "module/CMakeFiles/converter.dir/minutes.cpp.o" "gcc" "module/CMakeFiles/converter.dir/minutes.cpp.o.d"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/utils.cpp" "module/CMakeFiles/converter.dir/utils.cpp.o" "gcc" "module/CMakeFiles/converter.dir/utils.cpp.o.d"
   )
 
 # Targets to which this target links.

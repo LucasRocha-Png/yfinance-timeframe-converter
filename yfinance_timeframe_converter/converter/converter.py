@@ -15,11 +15,12 @@ else:
 
 cpp_convert_index = library.convert_index
 cpp_convert_index.argtypes = [
-                        ctypes.POINTER(ctypes.c_char_p),  # Index
-                        ctypes.c_int,                     # Index Len
+                            ctypes.POINTER(ctypes.c_char_p),  # Index
+                            ctypes.c_int,                     # Index Len
 
-                        ctypes.POINTER(ctypes.c_char_p)]  # Inputs
-              
+                            ctypes.POINTER(ctypes.c_char_p)# Inputs
+                            ]  
+         
 
 
 def convert_dataframe(data: list):
