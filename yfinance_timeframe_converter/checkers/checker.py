@@ -1,4 +1,4 @@
-from formater.formater import format_row_cpp_to_python
+from formater.formater import format_cpp_row_to_python
 from checkers.return_error import return_error_by_list
 from utils.utils import exception_message
 import pandas as pd
@@ -57,7 +57,7 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
                     timeframes   
                     )
 
-    list_errors = format_row_cpp_to_python(errors, 5, "int")
+    list_errors = format_cpp_row_to_python(errors, 5, "int")
 
     # If there is an error, calls return error function
     if sum(list_errors) != 0:

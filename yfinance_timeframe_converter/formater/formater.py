@@ -3,7 +3,7 @@ import pandas as pd
 import ctypes
 
 
-def format_row_python_to_cpp(row: list, type: str) -> list:
+def format_python_row_to_cpp(row: list, type: str) -> list:
     """
     Formats an python row to C++ row
 
@@ -36,7 +36,7 @@ def format_row_python_to_cpp(row: list, type: str) -> list:
 
     return row  
 
-def format_row_cpp_to_python(row: list, len_row: int, type: str) -> list:
+def format_cpp_row_to_python(row: list, len_row: int, type: str) -> list:
     """
     Formats a C++ row to Python Row
 
@@ -73,16 +73,16 @@ def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_o
     #data = data.fillna(0)
 
     index = data.index.astype(str).to_list()
-    index = format_row_python_to_cpp(index, "string")
+    index = format_python_row_to_cpp(index, "string")
 
     columns = data.columns.to_list()
-    columns = format_row_python_to_cpp(columns, "string")
+    columns = format_python_row_to_cpp(columns, "string")
 
-    values = data.to_numpy().ravel(order='F').tolist() # Reshape dataframe
-    values = format_row_python_to_cpp(values, "double")
+    values = data.to_numpy().ravel(order='F').tolist() # Reshape dataframe to one long list
+    values = format_python_row_to_cpp(values, "double")
 
     timeframes = [timeframe_input, timeframe_output]
-    timeframes = format_row_python_to_cpp(timeframes, "string")
+    timeframes = format_python_row_to_cpp(timeframes, "string")
 
     data = [index, columns, values, timeframes]
     return data

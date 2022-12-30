@@ -1,5 +1,5 @@
 from utils.utils import exception_message
-from formater.formater import format_row_cpp_to_python
+from formater.formater import format_cpp_row_to_python
 import pandas as pd
 
 def return_error_by_list(list_errors: list, data: pd.core.frame.DataFrame, timeframes: list) -> None:
@@ -11,7 +11,7 @@ def return_error_by_list(list_errors: list, data: pd.core.frame.DataFrame, timef
     timeframes_available = ["1m", "2m", "3m", "5m", "15m", "30m", "60m", "90m", "1h", "2h", "3h", "4h", "1d", "5d", "1wk", "1mo", "3mo", "6mo", "1yr"]
 
     # Convert Timeframes
-    timeframes = format_row_cpp_to_python(timeframes, 2, "string")
+    timeframes = format_cpp_row_to_python(timeframes, 2, "string")
 
     # Timeframe does not exists
     if list_errors[0] == 1:
