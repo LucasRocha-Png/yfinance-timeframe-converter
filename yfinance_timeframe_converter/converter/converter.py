@@ -10,28 +10,28 @@ archive_folder = os.path.dirname(__file__)
 if plataform == "win32": 
     exception_message("Module not available in Windows yet!")     	
 else:
-    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libconvert_timeframe.so")
+    library = ctypes.CDLL(f"{archive_folder}/module/build/libconvert_timeframe.so")
        
 
-cpp_convert_timeframe = library.convert_timeframe
-cpp_convert_timeframe.argtypes = [
+cpp_convert_index = library.convert_index
+cpp_convert_index.argtypes = [
                         ctypes.POINTER(ctypes.c_char_p),  # Index
                         ctypes.c_int,                     # Index Len
 
-                        ctypes.POINTER(ctypes.c_char_p),  # Columns names
-                        ctypes.c_int,                     # Columns name len
-
-                        ctypes.POINTER(ctypes.c_double),  # Values
-                        ctypes.c_int,                     # Values len
-
                         ctypes.POINTER(ctypes.c_char_p)]  # Inputs
+              
 
 
-def convert_timeframe(data: list):
+def convert_dataframe(data: list):
+    """
+    Get data and send it to the C++ function
+    """
     index = data[0]
     columns = data[1]
     values = data[2]
     timeframes = data[3]
 
-    cpp_convert_timeframe(index, len(index), columns, len(columns), values, len(values), timeframes)
+    # Converts index
+    cpp_convert_index(index, len(index), timeframes)
+
     

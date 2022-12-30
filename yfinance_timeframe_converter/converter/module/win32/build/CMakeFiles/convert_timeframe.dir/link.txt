@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -Wall -Werror -std=c++17 -shared -Wl,-soname,libconvert_timeframe.so -o libconvert_timeframe.so CMakeFiles/convert_timeframe.dir/main.cpp.o  src/libconverter.a 

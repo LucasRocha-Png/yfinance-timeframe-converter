@@ -1,4 +1,4 @@
-from converter.converter import convert_timeframe
+from converter.converter import convert_dataframe
 from checkers.basic_checker import basic_checker
 from formater.formater import format_data
 from utils.utils import renames_timeframe
@@ -25,7 +25,7 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     if checking == True:
         checker(converted_data, data)
 
-    convert_timeframe(converted_data)
+    convert_dataframe(converted_data)
     
 
 if __name__ == "__main__":

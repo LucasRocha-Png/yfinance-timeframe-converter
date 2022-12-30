@@ -1,2 +1,0 @@
-/usr/bin/ar qc libconverter.a CMakeFiles/converter.dir/converter.cpp.o
-/usr/bin/ranlib libconverter.a
