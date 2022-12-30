@@ -16,7 +16,22 @@ int checks_if_convertion_is_valid(std::vector<std::string>& timeframes){
         }
     }
 
-    else if (timeframe_input == "90m" || timeframe_input == "5d"|| timeframe_output == "5d"){
+    else if (timeframe_input == "3m"){
+        if (timeframe_output == "5m"){
+            return 1;
+        }
+    }
+
+    else if (timeframe_input == "90m"){
+        if (timeframe_output == "1h"){
+            return 1;
+        }
+        else if (timeframe_output == "4h"){
+            return 1;
+        }
+    }
+
+    else if (timeframe_input == "5d"|| timeframe_input == "3h" || timeframe_output == "5d"){
         return 1;
     }
 

@@ -174,11 +174,8 @@ CMakeFiles/convert_timeframe.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   ../main.hpp \
-  ../module/converter.hpp \
-  ../module/utils.hpp
+  ../module/converter.hpp
 
-
-../module/utils.hpp:
 
 ../main.hpp:
 

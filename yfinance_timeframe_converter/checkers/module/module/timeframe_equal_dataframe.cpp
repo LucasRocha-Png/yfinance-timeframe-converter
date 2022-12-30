@@ -4,7 +4,7 @@
 
 int checks_if_index_is_equal_than_timeframe(std::vector<std::string>& index, std::string& timeframe){
 
-    std::vector<std::string> minutes_timeframe = {"1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h"};
+    std::vector<std::string> minutes_timeframe = {"1m", "2m", "3m", "5m", "15m", "30m", "60m", "90m", "1h", "2h", "3h", "4h"};
 
     std::string last_index = index[index.size()-1];
     int len_last_index = last_index.length();

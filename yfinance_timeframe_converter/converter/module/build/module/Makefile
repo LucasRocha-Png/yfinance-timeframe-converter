@@ -154,54 +154,6 @@ converter.cpp.s:
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/converter.cpp.s
 .PHONY : converter.cpp.s
 
-minutes.o: minutes.cpp.o
-.PHONY : minutes.o
-
-# target to build an object file
-minutes.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/minutes.cpp.o
-.PHONY : minutes.cpp.o
-
-minutes.i: minutes.cpp.i
-.PHONY : minutes.i
-
-# target to preprocess a source file
-minutes.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/minutes.cpp.i
-.PHONY : minutes.cpp.i
-
-minutes.s: minutes.cpp.s
-.PHONY : minutes.s
-
-# target to generate assembly for a file
-minutes.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/minutes.cpp.s
-.PHONY : minutes.cpp.s
-
-utils.o: utils.cpp.o
-.PHONY : utils.o
-
-# target to build an object file
-utils.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/utils.cpp.o
-.PHONY : utils.cpp.o
-
-utils.i: utils.cpp.i
-.PHONY : utils.i
-
-# target to preprocess a source file
-utils.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/utils.cpp.i
-.PHONY : utils.cpp.i
-
-utils.s: utils.cpp.s
-.PHONY : utils.s
-
-# target to generate assembly for a file
-utils.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/utils.cpp.s
-.PHONY : utils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,12 +166,6 @@ help:
 	@echo "... converter.o"
 	@echo "... converter.i"
 	@echo "... converter.s"
-	@echo "... minutes.o"
-	@echo "... minutes.i"
-	@echo "... minutes.s"
-	@echo "... utils.o"
-	@echo "... utils.i"
-	@echo "... utils.s"
 .PHONY : help
 
 

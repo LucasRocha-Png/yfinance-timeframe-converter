@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.22)
 project(convert_timeframe VERSION 1.0.0)
 
 
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++17")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -fPIC -std=c++17")
 
 
 #Imports the subdirectory folder of print vector

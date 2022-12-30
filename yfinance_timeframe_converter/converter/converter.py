@@ -27,6 +27,7 @@ def convert_dataframe(data: list):
     """
     Get data and send it to the C++ function
     """
+    
     index = data[0]
     columns = data[1]
     values = data[2]

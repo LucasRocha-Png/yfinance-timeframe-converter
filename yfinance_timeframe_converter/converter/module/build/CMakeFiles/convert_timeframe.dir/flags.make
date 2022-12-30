@@ -6,5 +6,5 @@ CXX_DEFINES = -Dconvert_timeframe_EXPORTS
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -Wall -Werror -std=c++17 -fPIC
+CXX_FLAGS =  -Wall -Werror -fPIC -std=c++17 -fPIC
 

@@ -33,13 +33,13 @@ if __name__ == "__main__":
     import time
 
 
-    timeframe = "1d"
+    timeframe = "1m"
     df = download_dataframe("AAPL", timeframe)
 
     start = time.time()
     
     for i in range(1):
-        timeframe_converter(df, timeframe, "1mo", True)
+        timeframe_converter(df, timeframe, "1d", True)
 
     end = time.time()
     print(f"Total running:", round(end - start, 10))

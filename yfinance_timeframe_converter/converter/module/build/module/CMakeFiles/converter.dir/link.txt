@@ -1,2 +1,2 @@
-/usr/bin/ar qc libconverter.a CMakeFiles/converter.dir/converter.cpp.o CMakeFiles/converter.dir/minutes.cpp.o CMakeFiles/converter.dir/utils.cpp.o
+/usr/bin/ar qc libconverter.a CMakeFiles/converter.dir/converter.cpp.o
 /usr/bin/ranlib libconverter.a

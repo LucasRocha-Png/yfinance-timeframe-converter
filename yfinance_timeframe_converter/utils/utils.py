@@ -21,7 +21,7 @@ def download_dataframe(ticket: str = "AAPL", timeframe: str = "1d") -> pd.core.f
     periods = ["7d", "60d", "60d", "60d", "60d", "60d", "60d", "730d", "max", "max", "max" , "max", "max"]
 
     if timeframe not in timeframes:
-        exception_message(f"Period {timeframe} not available! Only accepts {timeframes}")
+        exception_message(f"Period {timeframe} not available for download! Only accepts {timeframes}")
 
     period = periods[timeframes.index(timeframe)]
 
