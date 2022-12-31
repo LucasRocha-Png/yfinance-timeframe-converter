@@ -37,7 +37,8 @@ std::map<std::string, std::pair<std::string, std::string>> key_map = {
   {"10d", {"day", "10"}},
   {"15d", {"day", "15"}},
 
-  {"1wk", {"day", "convert"}},
+  {"1wk", {"week", "1"}},
+
   {"1mo", {"month", "1"}},
   {"2mo", {"month", "2"}},
   {"3mo", {"month", "3"}},
@@ -56,6 +57,7 @@ std::map<std::string, std::pair<int, int>> location_value = {
   {"minute", {14,2}},
   {"hour", {11,2}},
   {"day", {8,2}},
+  {"week", {8,2}},
   {"month", {5,2}},
   {"year", {0, 4}}
 };

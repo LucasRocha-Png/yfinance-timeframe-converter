@@ -1,2 +1,2 @@
-/usr/bin/ar qc libchecker.a CMakeFiles/checker.dir/timeframe_exists.cpp.o CMakeFiles/checker.dir/columns.cpp.o CMakeFiles/checker.dir/conversion.cpp.o CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o CMakeFiles/checker.dir/timeframe_lower.cpp.o CMakeFiles/checker.dir/global_variables.cpp.o CMakeFiles/checker.dir/utils.cpp.o
+/usr/bin/ar qc libchecker.a CMakeFiles/checker.dir/timeframe_exists.cpp.o CMakeFiles/checker.dir/columns.cpp.o CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o CMakeFiles/checker.dir/timeframe_lower.cpp.o CMakeFiles/checker.dir/global_variables.cpp.o CMakeFiles/checker.dir/utils.cpp.o
 /usr/bin/ranlib libchecker.a

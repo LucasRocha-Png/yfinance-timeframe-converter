@@ -4,8 +4,6 @@ add_library(
 	    timeframe_exists.hpp
 	    columns.cpp
 	    columns.hpp
-	    conversion.cpp
-	    conversion.hpp
 		timeframe_equal_dataframe.cpp
 		timeframe_equal_dataframe.hpp
 		timeframe_lower.cpp

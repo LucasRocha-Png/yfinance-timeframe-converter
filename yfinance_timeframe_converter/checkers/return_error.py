@@ -9,8 +9,8 @@ def return_error_by_list(list_errors: list, data: pd.core.frame.DataFrame, timef
 
     columns_available = ["Open", "High", "Low	Close", "Adj Close", "Volume"]
     timeframes_available = [
-                        "1m", "2m", "3m", "4m", "5m", "6m", "10m", "12m", "15m", "20m", "30m", "60m", "90m",
-                        "1h", "2h", "3h", "4h", "6h", "8h", "12h",
+                        "1m", "2m", "3m", "4m", "5m", "6m", "10m", "12m", "15m", "20m", "30m", "60m",
+                        "1h","90m", "2h", "3h", "4h", "6h", "8h", "12h",
                         "1d", "2d", "3d", "5d", "6d", "10d", "15d",
                         "1wk", "1mo", "2mo", "3mo", "4mo", "6mo", "1yr", "2yr"
                         ]
@@ -37,7 +37,3 @@ def return_error_by_list(list_errors: list, data: pd.core.frame.DataFrame, timef
     # Timeframe passed is not the same as timeframe
     if list_errors[3] == 1:
         exception_message(f"Timeframe {timeframes[0]} passed probally is not the same from timeframe!")    
-
-    # Convertion not available
-    if list_errors[4] == 1:
-        exception_message(f"Convertion from {timeframes[0]} to {timeframes[1]} is not available!")

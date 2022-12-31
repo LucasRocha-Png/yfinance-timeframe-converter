@@ -323,9 +323,51 @@ module/CMakeFiles/converter.dir/index.cpp.o: ../module/index.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
   ../module/index.hpp \
-  ../module/minutes.hpp \
-  ../module/utils.hpp
+  ../module/utils.hpp \
+  ../module/global_variables.hpp \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h
 
 module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
   /usr/include/stdc-predef.h \
@@ -488,11 +530,49 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 
 ../module/index.hpp:
 
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/istream:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/c++/11/cwctype:
+
+/usr/include/c++/11/bits/locale_facets.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/c++/11/bits/streambuf.tcc:
+
+/usr/include/c++/11/stdexcept:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/c++/11/bits/locale_classes.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/c++/11/typeinfo:
+
+/usr/include/c++/11/exception:
+
+/usr/include/c++/11/ostream:
+
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
-../module/minutes.hpp:
+/usr/include/c++/11/system_error:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
@@ -523,6 +603,10 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+/usr/include/wctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -558,9 +642,13 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
 /usr/include/wchar.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/include/c++/11/bits/ostream.tcc:
 
 /usr/include/c++/11/clocale:
 
@@ -575,6 +663,8 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/c++/11/bits/concept_check.h:
 
 /usr/include/stdint.h:
+
+/usr/include/c++/11/ios:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -605,6 +695,8 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/c++/11/bits/invoke.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -641,6 +733,8 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -706,6 +800,8 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 
 /usr/include/c++/11/initializer_list:
 
+/usr/include/c++/11/streambuf:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -761,6 +857,8 @@ module/CMakeFiles/converter.dir/utils.cpp.o: ../module/utils.cpp \
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 

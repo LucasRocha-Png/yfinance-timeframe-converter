@@ -161,11 +161,8 @@ CMakeFiles/checkers.dir/main.cpp.o: ../main.cpp \
   ../module/timeframe_exists.hpp \
   ../module/timeframe_equal_dataframe.hpp \
   ../module/timeframe_lower.hpp \
-  ../module/columns.hpp \
-  ../module/conversion.hpp
+  ../module/columns.hpp
 
-
-../module/conversion.hpp:
 
 ../module/timeframe_exists.hpp:
 

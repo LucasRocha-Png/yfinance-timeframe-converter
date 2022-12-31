@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/columns.cpp" "module/CMakeFiles/checker.dir/columns.cpp.o" "gcc" "module/CMakeFiles/checker.dir/columns.cpp.o.d"
-  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/conversion.cpp" "module/CMakeFiles/checker.dir/conversion.cpp.o" "gcc" "module/CMakeFiles/checker.dir/conversion.cpp.o.d"
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/global_variables.cpp" "module/CMakeFiles/checker.dir/global_variables.cpp.o" "gcc" "module/CMakeFiles/checker.dir/global_variables.cpp.o.d"
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/timeframe_equal_dataframe.cpp" "module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o" "gcc" "module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o.d"
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/timeframe_exists.cpp" "module/CMakeFiles/checker.dir/timeframe_exists.cpp.o" "gcc" "module/CMakeFiles/checker.dir/timeframe_exists.cpp.o.d"

@@ -6,7 +6,6 @@
 #include "module/timeframe_equal_dataframe.hpp"
 #include "module/timeframe_lower.hpp"
 #include "module/columns.hpp"
-#include "module/conversion.hpp"
 
 #ifdef _WIN32
     #define API __declspec(dllexport)
@@ -48,12 +47,9 @@ extern "C"
         // Checks if index are equal than timeframe
         list_error.push_back(checks_if_index_is_equal_than_timeframe(v_index, v_timeframe[0]));
 
-        // Checks if convertion is valid
-        list_error.push_back(checks_if_convertion_is_valid(v_timeframe));
+        int *list_error_ = new int[4];
 
-        int *list_error_ = new int[5];
-
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 4; i++){
             list_error_[i] = list_error[i];
         }
 

@@ -57,7 +57,7 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
                     timeframes   
                     )
 
-    list_errors = format_cpp_row_to_python(errors, 5, "int")
+    list_errors = format_cpp_row_to_python(errors, 4, "int")
 
     # If there is an error, calls return error function
     if sum(list_errors) != 0:

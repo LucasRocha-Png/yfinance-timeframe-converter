@@ -34,13 +34,13 @@ if __name__ == "__main__":
     import time
 
 
-    timeframe = "1h"
-    df = download_dataframe("EURUSD=X", timeframe)
+    timeframe = "1d"
+    df = download_dataframe("AAPL", timeframe)
 
     start = time.time()
     
     for i in range(1):
-        timeframe_converter(df, timeframe, "8h", True)
+        timeframe_converter(df, timeframe, "1wk", False)
 
     end = time.time()
     print(f"Total running:", round(end - start, 10))

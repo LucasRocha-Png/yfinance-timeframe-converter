@@ -174,8 +174,10 @@ CMakeFiles/convert_timeframe.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   ../main.hpp \
-  ../module/converter.hpp
+  ../module/index.hpp
 
+
+../module/index.hpp:
 
 ../main.hpp:
 
@@ -452,8 +454,6 @@ CMakeFiles/convert_timeframe.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/cctype:
-
-../module/converter.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 

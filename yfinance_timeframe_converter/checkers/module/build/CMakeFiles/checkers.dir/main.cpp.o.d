@@ -136,5 +136,4 @@ CMakeFiles/checkers.dir/main.cpp.o: \
  /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/timeframe_exists.hpp \
  /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/timeframe_equal_dataframe.hpp \
  /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/timeframe_lower.hpp \
- /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/columns.hpp \
- /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/conversion.hpp
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/columns.hpp
