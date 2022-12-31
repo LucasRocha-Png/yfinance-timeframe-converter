@@ -1,6 +1,6 @@
 add_library(converter
-            converter.cpp
-            converter.hpp
+            index.cpp
+            index.hpp
             utils.cpp
             utils.hpp
             global_variables.cpp

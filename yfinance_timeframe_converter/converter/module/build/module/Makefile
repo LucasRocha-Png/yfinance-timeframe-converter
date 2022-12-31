@@ -130,30 +130,6 @@ converter/fast:
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/build
 .PHONY : converter/fast
 
-converter.o: converter.cpp.o
-.PHONY : converter.o
-
-# target to build an object file
-converter.cpp.o:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/converter.cpp.o
-.PHONY : converter.cpp.o
-
-converter.i: converter.cpp.i
-.PHONY : converter.i
-
-# target to preprocess a source file
-converter.cpp.i:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/converter.cpp.i
-.PHONY : converter.cpp.i
-
-converter.s: converter.cpp.s
-.PHONY : converter.s
-
-# target to generate assembly for a file
-converter.cpp.s:
-	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/converter.cpp.s
-.PHONY : converter.cpp.s
-
 global_variables.o: global_variables.cpp.o
 .PHONY : global_variables.o
 
@@ -177,6 +153,30 @@ global_variables.s: global_variables.cpp.s
 global_variables.cpp.s:
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/global_variables.cpp.s
 .PHONY : global_variables.cpp.s
+
+index.o: index.cpp.o
+.PHONY : index.o
+
+# target to build an object file
+index.cpp.o:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/index.cpp.o
+.PHONY : index.cpp.o
+
+index.i: index.cpp.i
+.PHONY : index.i
+
+# target to preprocess a source file
+index.cpp.i:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/index.cpp.i
+.PHONY : index.cpp.i
+
+index.s: index.cpp.s
+.PHONY : index.s
+
+# target to generate assembly for a file
+index.cpp.s:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/index.cpp.s
+.PHONY : index.cpp.s
 
 utils.o: utils.cpp.o
 .PHONY : utils.o
@@ -211,12 +211,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... converter"
-	@echo "... converter.o"
-	@echo "... converter.i"
-	@echo "... converter.s"
 	@echo "... global_variables.o"
 	@echo "... global_variables.i"
 	@echo "... global_variables.s"
+	@echo "... index.o"
+	@echo "... index.i"
+	@echo "... index.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"
