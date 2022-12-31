@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/converter.cpp" "module/CMakeFiles/converter.dir/converter.cpp.o" "gcc" "module/CMakeFiles/converter.dir/converter.cpp.o.d"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/global_variables.cpp" "module/CMakeFiles/converter.dir/global_variables.cpp.o" "gcc" "module/CMakeFiles/converter.dir/global_variables.cpp.o.d"
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/utils.cpp" "module/CMakeFiles/converter.dir/utils.cpp.o" "gcc" "module/CMakeFiles/converter.dir/utils.cpp.o.d"
   )
 
 # Targets to which this target links.

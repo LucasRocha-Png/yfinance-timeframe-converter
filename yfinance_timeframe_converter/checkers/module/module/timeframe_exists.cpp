@@ -1,19 +1,13 @@
 #include <vector>
 #include <string>
 #include "timeframe_exists.hpp"
+#include "global_variables.hpp"
+#include "utils.hpp"
 
 int checks_if_timeframes_exists(std::vector<std::string>& timeframes){
-    std::vector<std::string> timeframes_available = {"1m", "2m", "3m", "5m", "15m", "30m", "60m", "90m", "1h", "2h", "3h", "4h", "1d", "5d", "1wk", "1mo", "3mo", "6mo", "1yr"};
-
     for (std::string timeframe : timeframes){
-        bool exists = false;
-        for (std::string period : timeframes_available){
-            if (period == timeframe){
-                exists = true;
-                break;
-            }
-        }
-        if (exists == false){
+        int index_timeframe = get_index(available_timeframes, timeframe);
+        if (index_timeframe == -1){
             return 1;
         }
     }

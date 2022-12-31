@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/columns.cpp.o.d"
   "CMakeFiles/checker.dir/conversion.cpp.o"
   "CMakeFiles/checker.dir/conversion.cpp.o.d"
+  "CMakeFiles/checker.dir/global_variables.cpp.o"
+  "CMakeFiles/checker.dir/global_variables.cpp.o.d"
   "CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o"
   "CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o.d"
   "CMakeFiles/checker.dir/timeframe_exists.cpp.o"

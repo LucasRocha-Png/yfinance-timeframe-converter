@@ -17,7 +17,7 @@ def return_error_by_list(list_errors: list, data: pd.core.frame.DataFrame, timef
     if list_errors[0] == 1:
         for timeframe in timeframes:
             if timeframe not in timeframes_available:
-                exception_message(f"Timeframe {timeframe} does not exist!")
+                exception_message(f"Timeframe {timeframe} does not exist! Only accepts {timeframes_available}")
 
     # Output timeframe is lower than input
     if list_errors[1] == 1:

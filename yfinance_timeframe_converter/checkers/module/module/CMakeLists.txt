@@ -10,6 +10,8 @@ add_library(
 		timeframe_equal_dataframe.hpp
 		timeframe_lower.cpp
 		timeframe_lower.hpp
+		global_variables.cpp
+		global_variables.hpp
 	    utils.cpp
 	    utils.hpp
 		)

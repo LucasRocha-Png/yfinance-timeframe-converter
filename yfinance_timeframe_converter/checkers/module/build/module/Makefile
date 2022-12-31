@@ -178,6 +178,30 @@ conversion.cpp.s:
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/conversion.cpp.s
 .PHONY : conversion.cpp.s
 
+global_variables.o: global_variables.cpp.o
+.PHONY : global_variables.o
+
+# target to build an object file
+global_variables.cpp.o:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/global_variables.cpp.o
+.PHONY : global_variables.cpp.o
+
+global_variables.i: global_variables.cpp.i
+.PHONY : global_variables.i
+
+# target to preprocess a source file
+global_variables.cpp.i:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/global_variables.cpp.i
+.PHONY : global_variables.cpp.i
+
+global_variables.s: global_variables.cpp.s
+.PHONY : global_variables.s
+
+# target to generate assembly for a file
+global_variables.cpp.s:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build" && $(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/global_variables.cpp.s
+.PHONY : global_variables.cpp.s
+
 timeframe_equal_dataframe.o: timeframe_equal_dataframe.cpp.o
 .PHONY : timeframe_equal_dataframe.o
 
@@ -289,6 +313,9 @@ help:
 	@echo "... conversion.o"
 	@echo "... conversion.i"
 	@echo "... conversion.s"
+	@echo "... global_variables.o"
+	@echo "... global_variables.i"
+	@echo "... global_variables.s"
 	@echo "... timeframe_equal_dataframe.o"
 	@echo "... timeframe_equal_dataframe.i"
 	@echo "... timeframe_equal_dataframe.s"

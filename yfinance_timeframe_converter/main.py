@@ -17,15 +17,16 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     if timeframe_input == timeframe_output:
         return data
 
-    if checking == True:
+    if checking:
         basic_checker(data)
 
     converted_data = format_data(data, timeframe_input, timeframe_output)
 
-    if checking == True:
+    if checking:
         checker(converted_data, data)
 
     convert_dataframe(converted_data)
+
     
 
 if __name__ == "__main__":
@@ -39,7 +40,7 @@ if __name__ == "__main__":
     start = time.time()
     
     for i in range(1):
-        timeframe_converter(df, timeframe, "1mo", True)
+        timeframe_converter(df, timeframe, "1yr", True)
 
     end = time.time()
     print(f"Total running:", round(end - start, 10))

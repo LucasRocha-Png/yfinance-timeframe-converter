@@ -16,12 +16,10 @@ extern "C"{
         /*
         Threats the data and pass it to the convert_index_ function 
         */
-
         
-        std::vector<std::string> v_index(index, index+len_index); // Index            
-        std::vector<std::string> v_timeframe(timeframes, timeframes+2); // Timeframe
+        std::vector<std::string> v_index(index, index+len_index);         
+        std::vector<std::string> v_timeframe(timeframes, timeframes+2); 
 
-        // New Timeframe
         std::string timeframe_input = timeframes[0];
         std::string timeframe_output = timeframes[1];
         

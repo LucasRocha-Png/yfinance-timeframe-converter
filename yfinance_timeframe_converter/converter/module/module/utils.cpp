@@ -11,3 +11,10 @@ bool isin(std::string& object, std::vector<std::string>& list){
     }
     return false;
 }
+
+int string_to_int(std::string& string, std::pair<int,int> slicing){
+
+    
+
+    return std::stoi(string);
+}

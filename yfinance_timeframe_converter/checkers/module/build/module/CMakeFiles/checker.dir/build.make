@@ -139,10 +139,24 @@ module/CMakeFiles/checker.dir/timeframe_lower.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/checker.dir/timeframe_lower.cpp.s"
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/timeframe_lower.cpp" -o CMakeFiles/checker.dir/timeframe_lower.cpp.s
 
+module/CMakeFiles/checker.dir/global_variables.cpp.o: module/CMakeFiles/checker.dir/flags.make
+module/CMakeFiles/checker.dir/global_variables.cpp.o: ../module/global_variables.cpp
+module/CMakeFiles/checker.dir/global_variables.cpp.o: module/CMakeFiles/checker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object module/CMakeFiles/checker.dir/global_variables.cpp.o"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT module/CMakeFiles/checker.dir/global_variables.cpp.o -MF CMakeFiles/checker.dir/global_variables.cpp.o.d -o CMakeFiles/checker.dir/global_variables.cpp.o -c "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/global_variables.cpp"
+
+module/CMakeFiles/checker.dir/global_variables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/checker.dir/global_variables.cpp.i"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/global_variables.cpp" > CMakeFiles/checker.dir/global_variables.cpp.i
+
+module/CMakeFiles/checker.dir/global_variables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/checker.dir/global_variables.cpp.s"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/global_variables.cpp" -o CMakeFiles/checker.dir/global_variables.cpp.s
+
 module/CMakeFiles/checker.dir/utils.cpp.o: module/CMakeFiles/checker.dir/flags.make
 module/CMakeFiles/checker.dir/utils.cpp.o: ../module/utils.cpp
 module/CMakeFiles/checker.dir/utils.cpp.o: module/CMakeFiles/checker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object module/CMakeFiles/checker.dir/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object module/CMakeFiles/checker.dir/utils.cpp.o"
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT module/CMakeFiles/checker.dir/utils.cpp.o -MF CMakeFiles/checker.dir/utils.cpp.o.d -o CMakeFiles/checker.dir/utils.cpp.o -c "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module/utils.cpp"
 
 module/CMakeFiles/checker.dir/utils.cpp.i: cmake_force
@@ -160,6 +174,7 @@ checker_OBJECTS = \
 "CMakeFiles/checker.dir/conversion.cpp.o" \
 "CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o" \
 "CMakeFiles/checker.dir/timeframe_lower.cpp.o" \
+"CMakeFiles/checker.dir/global_variables.cpp.o" \
 "CMakeFiles/checker.dir/utils.cpp.o"
 
 # External object files for target checker
@@ -170,10 +185,11 @@ module/libchecker.a: module/CMakeFiles/checker.dir/columns.cpp.o
 module/libchecker.a: module/CMakeFiles/checker.dir/conversion.cpp.o
 module/libchecker.a: module/CMakeFiles/checker.dir/timeframe_equal_dataframe.cpp.o
 module/libchecker.a: module/CMakeFiles/checker.dir/timeframe_lower.cpp.o
+module/libchecker.a: module/CMakeFiles/checker.dir/global_variables.cpp.o
 module/libchecker.a: module/CMakeFiles/checker.dir/utils.cpp.o
 module/libchecker.a: module/CMakeFiles/checker.dir/build.make
 module/libchecker.a: module/CMakeFiles/checker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libchecker.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libchecker.a"
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && $(CMAKE_COMMAND) -P CMakeFiles/checker.dir/cmake_clean_target.cmake
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/module" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/checker.dir/link.txt --verbose=$(VERBOSE)
 
