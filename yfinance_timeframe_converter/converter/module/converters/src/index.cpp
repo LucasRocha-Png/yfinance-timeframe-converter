@@ -114,12 +114,5 @@ std::vector<std::string> convert_index_(std::vector<std::string>& index, std::st
         loop += 1;
     }
 
-
-    filtered_index.insert(filtered_index.begin(), std::to_string(filtered_index.size()));
-
-    for (auto& value : filtered_index){
-        std::cout << value << "\n";
-    }
-
     return filtered_index;
 }

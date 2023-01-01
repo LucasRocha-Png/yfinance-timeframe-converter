@@ -1,4 +1,4 @@
-# Install script for directory: /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/module
+# Install script for directory: /home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/checkers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -54,58 +54,58 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module"
+CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build"
+CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/checkers.dir/all
-all: module/all
+all: checkers/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: module/preinstall
+preinstall: checkers/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/checkers.dir/clean
-clean: module/clean
+clean: checkers/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory module
+# Directory level rules for directory checkers
 
 # Recursive "all" directory target.
-module/all: module/CMakeFiles/checker.dir/all
-.PHONY : module/all
+checkers/all: checkers/CMakeFiles/checker.dir/all
+.PHONY : checkers/all
 
 # Recursive "preinstall" directory target.
-module/preinstall:
-.PHONY : module/preinstall
+checkers/preinstall:
+.PHONY : checkers/preinstall
 
 # Recursive "clean" directory target.
-module/clean: module/CMakeFiles/checker.dir/clean
-.PHONY : module/clean
+checkers/clean: checkers/CMakeFiles/checker.dir/clean
+.PHONY : checkers/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/checkers.dir
 
 # All Build rule for target.
-CMakeFiles/checkers.dir/all: module/CMakeFiles/checker.dir/all
+CMakeFiles/checkers.dir/all: checkers/CMakeFiles/checker.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=8,9 "Built target checkers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build/CMakeFiles" --progress-num=8,9 "Built target checkers"
 .PHONY : CMakeFiles/checkers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/checkers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 9
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build/CMakeFiles" 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/checkers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build/CMakeFiles" 0
 .PHONY : CMakeFiles/checkers.dir/rule
 
 # Convenience name for target.
@@ -118,30 +118,30 @@ CMakeFiles/checkers.dir/clean:
 .PHONY : CMakeFiles/checkers.dir/clean
 
 #=============================================================================
-# Target rules for target module/CMakeFiles/checker.dir
+# Target rules for target checkers/CMakeFiles/checker.dir
 
 # All Build rule for target.
-module/CMakeFiles/checker.dir/all:
-	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/depend
-	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target checker"
-.PHONY : module/CMakeFiles/checker.dir/all
+checkers/CMakeFiles/checker.dir/all:
+	$(MAKE) $(MAKESILENT) -f checkers/CMakeFiles/checker.dir/build.make checkers/CMakeFiles/checker.dir/depend
+	$(MAKE) $(MAKESILENT) -f checkers/CMakeFiles/checker.dir/build.make checkers/CMakeFiles/checker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target checker"
+.PHONY : checkers/CMakeFiles/checker.dir/all
 
 # Build rule for subdir invocation for target.
-module/CMakeFiles/checker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/CMakeFiles/checker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checkers/module/build/CMakeFiles" 0
-.PHONY : module/CMakeFiles/checker.dir/rule
+checkers/CMakeFiles/checker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build/CMakeFiles" 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 checkers/CMakeFiles/checker.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/checker/module/build/CMakeFiles" 0
+.PHONY : checkers/CMakeFiles/checker.dir/rule
 
 # Convenience name for target.
-checker: module/CMakeFiles/checker.dir/rule
+checker: checkers/CMakeFiles/checker.dir/rule
 .PHONY : checker
 
 # clean rule for target.
-module/CMakeFiles/checker.dir/clean:
-	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/checker.dir/build.make module/CMakeFiles/checker.dir/clean
-.PHONY : module/CMakeFiles/checker.dir/clean
+checkers/CMakeFiles/checker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f checkers/CMakeFiles/checker.dir/build.make checkers/CMakeFiles/checker.dir/clean
+.PHONY : checkers/CMakeFiles/checker.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

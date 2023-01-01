@@ -50,15 +50,15 @@ def format_cpp_row_to_python(row: list, len_row: int, type: str) -> list:
 
     new_row = []
 
-    if type == "string":
-        for value in row:
-            if value != None:
-                new_row.append(str(value, "UTF-8"))   
-            if len_row == len(new_row):
-                break
+    if type in ["float", "bool", "int", "double", "string"]:
+        new_row = row[:len_row+1]      
 
-    elif type in ["float", "bool", "int", "double"]:
-        new_row = row[:len_row]            
+    if type == "string":
+        for i, value in enumerate(new_row):
+            try:
+                new_row[i] = str(value, "UTF-8")
+            except:
+                print(new_row[i])    
 
     return new_row
 

@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include <fstream>
 #include "../includes/utils.hpp"
 
 
@@ -27,4 +28,20 @@ int getDayOfWeek(int day, int month, int year) {
     int dayOfWeek = (year + year/4 - year/100 + year/400 + t[month-1] + day) % 7;
 
     return dayOfWeek;
+}
+
+void vector_to_text(std::vector<std::string> list, char* output_folder){
+  // Create object txt
+  std::ofstream outputFile;
+
+  // Open file   
+  outputFile.open(output_folder, std::ios::trunc);
+
+  if (outputFile.is_open()) {
+    for (std::string& line : list){
+        outputFile << line << "\n";
+    }
+
+    outputFile.close();
+  }
 }
