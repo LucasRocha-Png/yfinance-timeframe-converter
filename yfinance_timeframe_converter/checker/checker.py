@@ -14,23 +14,15 @@ if plataform == "win32":
 else:
     library = ctypes.CDLL(f"{archive_folder}/module/build/libcheckers.so")	
     
-# Imports function checker from cpp
+# Imports function checker from cpp -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 cpp_checker = library.checker
-cpp_checker.argtypes = [
-                        ctypes.POINTER(ctypes.c_char_p),  # Index
-                        ctypes.c_int,                     # Index Len
-
-                        ctypes.POINTER(ctypes.c_char_p),  # Columns names
-                        ctypes.c_int,                     # Columns name len
-
-                        ctypes.POINTER(ctypes.c_char_p)]  # Inputs
-    
+# Accepts Index, index len, columns, columns len, and timeframes
+cpp_checker.argtypes = [ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, ctypes.POINTER(ctypes.c_char_p)] 
 cpp_checker.restype = ctypes.POINTER(ctypes.c_int)
 
-# Imports function to free the memory from cpp
+# Imports function to free the memory from cpp -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 free_array = library.free_array
 free_array.argtype = ctypes.POINTER(ctypes.c_int)
-
 
 def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
 
@@ -51,11 +43,7 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
     columns = converted_data[1]
     timeframes = converted_data[3]
 
-    errors = cpp_checker(
-                    index, len(index),  
-                    columns, len(columns),
-                    timeframes   
-                    )
+    errors = cpp_checker(index, len(index), columns, len(columns),timeframes)
 
     list_errors = format_cpp_row_to_python(errors, 4, "int")
 

@@ -14,7 +14,7 @@
 #endif
 
 extern "C"{
-    API void convert_index(char** index, int len_index, char** timeframes, char* output_folder){
+    API char** convert_index(char** index, int len_index, char** timeframes){
         /*
         Threats the data and pass it to the convert_index_ function 
         */
@@ -27,6 +27,22 @@ extern "C"{
         
         std::vector<std::string> new_index = convert_index_(v_index, timeframe_input, timeframe_output);
 
-        //vector_to_text(new_index, output_folder);
+        char** p_index = vector_to_p(new_index);
+
+        return p_index;
     }
+
+    API void convert_values(double** values, char** index, char** converted_index, char** columns){
+
+    }
+
+
+    API void free_array_char(char** array){
+        delete[] array;
+    }
+
+    API void free_array_double(double** array){
+        delete[] array;
+    }
+
 }

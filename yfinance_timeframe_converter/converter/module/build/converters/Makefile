@@ -202,6 +202,30 @@ src/utils.cpp.s:
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
+src/values.o: src/values.cpp.o
+.PHONY : src/values.o
+
+# target to build an object file
+src/values.cpp.o:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/values.cpp.o
+.PHONY : src/values.cpp.o
+
+src/values.i: src/values.cpp.i
+.PHONY : src/values.i
+
+# target to preprocess a source file
+src/values.cpp.i:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/values.cpp.i
+.PHONY : src/values.cpp.i
+
+src/values.s: src/values.cpp.s
+.PHONY : src/values.s
+
+# target to generate assembly for a file
+src/values.cpp.s:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/values.cpp.s
+.PHONY : src/values.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +244,9 @@ help:
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"
+	@echo "... src/values.o"
+	@echo "... src/values.i"
+	@echo "... src/values.s"
 .PHONY : help
 
 

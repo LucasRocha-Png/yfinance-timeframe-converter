@@ -47,7 +47,10 @@ extern "C"
         // Checks if index are equal than timeframe
         list_error.push_back(checks_if_index_is_equal_than_timeframe(v_index, v_timeframe[0]));
 
-        int *list_error_ = new int[4];
+
+
+        // Creates pointer
+        int* list_error_ = new int[4];
 
         for (int i = 0; i < 4; i++){
             list_error_[i] = list_error[i];

@@ -35,12 +35,12 @@ if __name__ == "__main__":
 
 
     timeframe = "1h"
-    df = download_dataframe("PETR4.SA", timeframe)
+    df = download_dataframe("AAPL", timeframe)
 
     start = time.time()
     
-    for i in range(1000):
-        timeframe_converter(df, timeframe, "2h", True)
+    for i in range(1):
+        timeframe_converter(df, timeframe, "1d", True)
 
     end = time.time()
     print(f"Total running:", round(end - start, 10))

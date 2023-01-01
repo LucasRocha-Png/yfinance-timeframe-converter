@@ -7,5 +7,11 @@
 #endif
 
 extern "C"{
-    API void convert_index(char** index, int len_index, char** timeframes, char* output_folder);
+    API char** convert_index(char** index, int len_index, char** timeframes);
+
+    API void convert_values(double** values, char** index, char** converted_index, char** columns);
+
+    API void free_array_char(char** array);
+
+    API void free_array_double(double** array);
 }

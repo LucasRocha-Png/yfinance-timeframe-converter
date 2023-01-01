@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-#include <fstream>
+#include <cstring>
 #include "../includes/utils.hpp"
 
 
@@ -30,18 +30,18 @@ int getDayOfWeek(int day, int month, int year) {
     return dayOfWeek;
 }
 
-void vector_to_text(std::vector<std::string> list, char* output_folder){
-  // Create object txt
-  std::ofstream outputFile;
+char** vector_to_p(std::vector<std::string>& list){
+    // Aloca a memória para a char**
+    char** arr = new char*[list.size() + 1];
 
-  // Open file   
-  outputFile.open(output_folder, std::ios::trunc);
-
-  if (outputFile.is_open()) {
-    for (std::string& line : list){
-        outputFile << line << "\n";
+    // Copia os elementos da vector para a char**
+    for (size_t i = 0; i < list.size(); i++) {
+        arr[i] = new char[list[i].size() + 1];
+        strcpy(arr[i], list[i].c_str());
     }
 
-    outputFile.close();
-  }
+    // Adiciona um elemento NULL no final da char**
+    arr[list.size()] = NULL;
+
+    return arr;
 }

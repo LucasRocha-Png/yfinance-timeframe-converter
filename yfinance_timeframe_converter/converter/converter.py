@@ -14,15 +14,23 @@ else:
     library = ctypes.CDLL(f"{archive_folder}/module/build/libconvert_timeframe.so")
        
 
+
+# Convert Index Function -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 cpp_convert_index = library.convert_index
-cpp_convert_index.argtypes = [
-                            ctypes.POINTER(ctypes.c_char_p),  # Index
-                            ctypes.c_int,                     # Index Len
+cpp_convert_index.argtypes = [ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, ctypes.POINTER(ctypes.c_char_p)]  # Accepts index, len index, and timeframes
+cpp_convert_index.restype = ctypes.POINTER(ctypes.c_char_p)  # Returns converted index
 
-                            ctypes.POINTER(ctypes.c_char_p),
+# Convert Values -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+cpp_convert_values = library.convert_values
+cpp_convert_values.argtypes = []
 
-                            ctypes.c_char_p
-                            ]  
+
+# Free memory array -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+cpp_free_memory_char = library.free_array_char
+cpp_free_memory_char.argtype = ctypes.POINTER(ctypes.c_char_p)
+
+cpp_free_memory_double = library.free_array_double
+cpp_free_memory_double.argtype = ctypes.POINTER(ctypes.c_double)
 
 
 def convert_dataframe(data: list):
@@ -30,22 +38,16 @@ def convert_dataframe(data: list):
     Get data and send it to the C++ function
     """
 
-    global archive_folder
-    
     index = data[0]
     columns = data[1]
     values = data[2]
     timeframes = data[3]
 
 
-    output_folder = os.path.join(archive_folder, "output")
-
-
-    index_output = os.path.join(output_folder, "index.txt")
-    index_output = bytes(index_output, "utf-8")
-
     # Converts index
-    cpp_convert_index(index, len(index), timeframes, index_output)
-
+    cpp_index = cpp_convert_index(index, len(index), timeframes)
+    len_index = int(str(cpp_index[0], "UTF-8"))
+    cpp_free_memory_char(cpp_index)
+    
 
     
