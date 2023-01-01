@@ -1,8 +1,8 @@
 from converter.converter import convert_dataframe
-from checkers.basic_checker import basic_checker
+from checker.basic_checker import basic_checker
 from formater.formater import format_data
 from utils.utils import renames_timeframe
-from checkers.checker import checker
+from checker.checker import checker
 import pandas as pd
 
 
