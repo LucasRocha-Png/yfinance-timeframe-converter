@@ -92,7 +92,7 @@ convert_timeframe_EXTERNAL_OBJECTS =
 
 libconvert_timeframe.so: CMakeFiles/convert_timeframe.dir/main.cpp.o
 libconvert_timeframe.so: CMakeFiles/convert_timeframe.dir/build.make
-libconvert_timeframe.so: module/libconverter.a
+libconvert_timeframe.so: converters/libconverter.a
 libconvert_timeframe.so: CMakeFiles/convert_timeframe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libconvert_timeframe.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/convert_timeframe.dir/link.txt --verbose=$(VERBOSE)

@@ -1,5 +1,5 @@
-module/CMakeFiles/converter.dir/global_variables.cpp.o: \
- /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/global_variables.cpp \
+converters/CMakeFiles/converter.dir/src/global_variables.cpp.o: \
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/global_variables.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -137,4 +137,4 @@ module/CMakeFiles/converter.dir/global_variables.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/module/global_variables.hpp
+ /home/lucas/Área\ de\ Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/../includes/global_variables.hpp

@@ -139,7 +139,7 @@ converter: cmake_check_build_system
 
 # fast build rule for target.
 converter/fast:
-	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/converter.dir/build.make module/CMakeFiles/converter.dir/build
+	$(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/build
 .PHONY : converter/fast
 
 main.o: main.cpp.o

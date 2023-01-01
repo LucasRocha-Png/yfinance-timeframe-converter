@@ -2,9 +2,9 @@
 #include <string>
 #include <iostream>
 
-#include "index.hpp"
-#include "utils.hpp"
-#include "global_variables.hpp"
+#include "../includes/index.hpp"
+#include "../includes/utils.hpp"
+#include "../includes/global_variables.hpp"
 
 
 std::vector<std::string> convert_index_(std::vector<std::string>& index, std::string& timeframe_input, std::string& timeframe_output){

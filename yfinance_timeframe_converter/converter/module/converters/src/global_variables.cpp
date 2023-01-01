@@ -1,6 +1,6 @@
 #include <string>
 #include <map>
-#include "global_variables.hpp"
+#include "../includes/global_variables.hpp"
 
 
 /*
