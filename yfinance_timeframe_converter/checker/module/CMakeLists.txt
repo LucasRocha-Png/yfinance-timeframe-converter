@@ -9,7 +9,7 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -fPIC -std=c++17")
 
 
 #Imports the subdirectory folder of print vector
-add_subdirectory(module)
+add_subdirectory(checkers)
 
 #Create Shared Library of main
 add_library(${PROJECT_NAME} SHARED
