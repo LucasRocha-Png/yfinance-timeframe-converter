@@ -1,17 +1,19 @@
-add_library(
-	    checker
-	    timeframe_exists.cpp
-	    timeframe_exists.hpp
-	    columns.cpp
-	    columns.hpp
-		timeframe_equal_dataframe.cpp
-		timeframe_equal_dataframe.hpp
-		timeframe_lower.cpp
-		timeframe_lower.hpp
-		global_variables.cpp
-		global_variables.hpp
-	    utils.cpp
-	    utils.hpp
-		)
+set(SOURCE
+    src/columns.cpp
+    src/global_variables.cpp
+    src/timeframe_equal_dataframe.cpp
+    src/timeframe_exists.cpp
+    src/timeframe_lower.cpp
+    src/utils.cpp)
+    
+set(HEADERS
+    includes/columns.hpp
+    includes/global_variables.hpp
+    includes/timeframe_equal_dataframe.hpp
+    includes/timeframe_exists.hpp
+    includes/timeframe_lower.hpp
+    includes/utils.hpp)    
+
+add_library(checker ${SOURCE} ${HEADERS})
 			
 target_compile_features(checker PUBLIC cxx_std_17)		

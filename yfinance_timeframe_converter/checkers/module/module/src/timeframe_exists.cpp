@@ -1,8 +1,8 @@
 #include <vector>
 #include <string>
-#include "timeframe_exists.hpp"
-#include "global_variables.hpp"
-#include "utils.hpp"
+#include "../includes/timeframe_exists.hpp"
+#include "../includes/global_variables.hpp"
+#include "../includes/utils.hpp"
 
 int checks_if_timeframes_exists(std::vector<std::string>& timeframes){
     for (std::string timeframe : timeframes){

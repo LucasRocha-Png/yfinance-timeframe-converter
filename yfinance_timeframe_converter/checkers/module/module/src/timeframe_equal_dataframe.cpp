@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
-#include "timeframe_equal_dataframe.hpp"
-#include "global_variables.hpp"
+#include "../includes/timeframe_equal_dataframe.hpp"
+#include "../includes/global_variables.hpp"
 
 int checks_if_index_is_equal_than_timeframe(std::vector<std::string>& index, std::string& timeframe){
     std::string last_index = index[index.size()-1];

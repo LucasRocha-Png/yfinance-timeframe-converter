@@ -1,8 +1,8 @@
 #include <vector>
 #include <string>
-#include "utils.hpp"
-#include "timeframe_lower.hpp"
-#include "global_variables.hpp"
+#include "../includes/utils.hpp"
+#include "../includes/timeframe_lower.hpp"
+#include "../includes/global_variables.hpp"
 
 int checks_if_input_is_lower_than_output(std::vector<std::string>& timeframes){
     std::string timeframe_input = timeframes[0];

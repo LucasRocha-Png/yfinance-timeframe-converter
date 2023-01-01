@@ -2,10 +2,10 @@
 #include <string>
 
 #include "main.hpp"
-#include "module/timeframe_exists.hpp"
-#include "module/timeframe_equal_dataframe.hpp"
-#include "module/timeframe_lower.hpp"
-#include "module/columns.hpp"
+#include "module/includes/timeframe_exists.hpp"
+#include "module/includes/timeframe_equal_dataframe.hpp"
+#include "module/includes/timeframe_lower.hpp"
+#include "module/includes/columns.hpp"
 
 #ifdef _WIN32
     #define API __declspec(dllexport)

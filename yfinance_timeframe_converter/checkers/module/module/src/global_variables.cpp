@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-#include "global_variables.hpp"
+#include "../includes/global_variables.hpp"
 
 std::vector<std::string> available_timeframes = {"1m", "2m", "3m", "4m", "5m", "6m", "10m", "12m", "15m", "20m", "30m", "60m", 
                                                 "1h", "90m", "2h", "3h", "4h", "6h", "8h", "12h",

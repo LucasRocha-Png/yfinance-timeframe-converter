@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
-#include "utils.hpp"
-#include "columns.hpp"
+#include "../includes/utils.hpp"
+#include "../includes/columns.hpp"
 
 int checks_if_columns_exists(std::vector<std::string>& columns){
     std::vector<std::string> columns_available = {"Open", "High", "Low", "Close", "Adj Close", "Volume"};
