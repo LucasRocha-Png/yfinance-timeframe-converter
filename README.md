@@ -1,1 +1,2 @@
-# yfinance-timeframe-changer
+# yfinance-timeframe-converter
+
