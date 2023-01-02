@@ -7,7 +7,7 @@ with open("README.md", "r") as rdm:
 # Setting up
 setup(
     name="yfinance_timeframe_converter",
-    version='0.0.1',
+    version='0.0.2',
     author="Lucas Rocha", 
     author_email="lucasrocha.png@gmail.com",
     description=DESCRIPTION,

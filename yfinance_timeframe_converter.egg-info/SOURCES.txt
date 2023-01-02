@@ -2,6 +2,7 @@ LICENSE.txt
 README.md
 setup.py
 yfinance_timeframe_converter/__init__.py
+yfinance_timeframe_converter/available_timeframes.py
 yfinance_timeframe_converter/timeframe_converter.py
 yfinance_timeframe_converter.egg-info/PKG-INFO
 yfinance_timeframe_converter.egg-info/SOURCES.txt

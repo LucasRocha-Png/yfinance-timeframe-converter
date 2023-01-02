@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: yfinance-timeframe-converter
-Version: 0.0.1
+Version: 0.0.2
 Summary: Converts YFinance's tables in other timeframe in an faster way
 Home-page: UNKNOWN
 Author: Lucas Rocha
@@ -16,6 +16,7 @@ Classifier: Operating System :: Unix
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
 
-# yfinance-timeframe-changer
+# yfinance-timeframe-converter
+
 
 
