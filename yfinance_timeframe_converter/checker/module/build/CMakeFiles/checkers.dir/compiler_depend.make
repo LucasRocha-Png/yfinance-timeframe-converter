@@ -157,20 +157,21 @@ CMakeFiles/checkers.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../main.hpp \
   ../checkers/includes/timeframe_exists.hpp \
   ../checkers/includes/timeframe_equal_dataframe.hpp \
   ../checkers/includes/timeframe_lower.hpp \
-  ../checkers/includes/columns.hpp
+  ../checkers/includes/columns.hpp \
+  ../checkers/includes/utils.hpp \
+  ../main.hpp
 
+
+../main.hpp:
 
 ../checkers/includes/columns.hpp:
 
 ../checkers/includes/timeframe_lower.hpp:
 
 ../checkers/includes/timeframe_equal_dataframe.hpp:
-
-../main.hpp:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
@@ -393,6 +394,8 @@ CMakeFiles/checkers.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+../checkers/includes/utils.hpp:
 
 /usr/include/c++/11/cstdint:
 

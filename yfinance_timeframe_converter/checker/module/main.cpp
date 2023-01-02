@@ -1,11 +1,12 @@
 #include <vector>
 #include <string>
 
-#include "main.hpp"
 #include "checkers/includes/timeframe_exists.hpp"
 #include "checkers/includes/timeframe_equal_dataframe.hpp"
 #include "checkers/includes/timeframe_lower.hpp"
 #include "checkers/includes/columns.hpp"
+#include "checkers/includes/utils.hpp"
+#include "main.hpp"
 
 #ifdef _WIN32
     #define API __declspec(dllexport)
@@ -19,43 +20,23 @@ extern "C"
     //[index, columns, values, timeframes]
     API int* checker(char** index, int len_index, char** columns, int len_columns, char** timeframes){
 
-        // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        // Index    
+        // Converts values to vector =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
         std::vector<std::string> v_index(index, index+len_index);
-
-        // Columns
         std::vector<std::string> v_columns(columns, columns+len_columns);
-
-        // Timeframe
         std::vector<std::string> v_timeframe(timeframes, timeframes+2);
-        // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-        
 
         // Checks if values are correct -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         std::vector<int> list_error = {};
 
-        // Checks if all timeframes exists
+        // Pushes the result to the list of errors
         list_error.push_back(checks_if_timeframes_exists(v_timeframe));
-
-        // Checks if timeframe_input is lower than output
         list_error.push_back(checks_if_input_is_lower_than_output(v_timeframe));
-
-        // Checks if columns exists
         list_error.push_back(checks_if_columns_exists(v_columns));
-
-        // Checks if index are equal than timeframe
         list_error.push_back(checks_if_index_is_equal_than_timeframe(v_index, v_timeframe[0]));
 
 
-
         // Creates pointer
-        int* list_error_ = new int[4];
-
-        for (int i = 0; i < 4; i++){
-            list_error_[i] = list_error[i];
-        }
-
+        int* list_error_ = vector_to_p(list_error);
         return list_error_;
     }
 

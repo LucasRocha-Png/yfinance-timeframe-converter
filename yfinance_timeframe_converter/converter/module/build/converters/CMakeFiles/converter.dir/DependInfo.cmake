@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/columns.cpp" "converters/CMakeFiles/converter.dir/src/columns.cpp.o" "gcc" "converters/CMakeFiles/converter.dir/src/columns.cpp.o.d"
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/global_variables.cpp" "converters/CMakeFiles/converter.dir/src/global_variables.cpp.o" "gcc" "converters/CMakeFiles/converter.dir/src/global_variables.cpp.o.d"
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/index.cpp" "converters/CMakeFiles/converter.dir/src/index.cpp.o" "gcc" "converters/CMakeFiles/converter.dir/src/index.cpp.o.d"
   "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/utils.cpp" "converters/CMakeFiles/converter.dir/src/utils.cpp.o" "gcc" "converters/CMakeFiles/converter.dir/src/utils.cpp.o.d"

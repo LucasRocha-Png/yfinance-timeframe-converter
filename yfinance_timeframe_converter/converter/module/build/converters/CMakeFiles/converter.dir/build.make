@@ -111,10 +111,24 @@ converters/CMakeFiles/converter.dir/src/values.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter.dir/src/values.cpp.s"
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/values.cpp" -o CMakeFiles/converter.dir/src/values.cpp.s
 
+converters/CMakeFiles/converter.dir/src/columns.cpp.o: converters/CMakeFiles/converter.dir/flags.make
+converters/CMakeFiles/converter.dir/src/columns.cpp.o: ../converters/src/columns.cpp
+converters/CMakeFiles/converter.dir/src/columns.cpp.o: converters/CMakeFiles/converter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object converters/CMakeFiles/converter.dir/src/columns.cpp.o"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT converters/CMakeFiles/converter.dir/src/columns.cpp.o -MF CMakeFiles/converter.dir/src/columns.cpp.o.d -o CMakeFiles/converter.dir/src/columns.cpp.o -c "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/columns.cpp"
+
+converters/CMakeFiles/converter.dir/src/columns.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter.dir/src/columns.cpp.i"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/columns.cpp" > CMakeFiles/converter.dir/src/columns.cpp.i
+
+converters/CMakeFiles/converter.dir/src/columns.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter.dir/src/columns.cpp.s"
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/columns.cpp" -o CMakeFiles/converter.dir/src/columns.cpp.s
+
 converters/CMakeFiles/converter.dir/src/utils.cpp.o: converters/CMakeFiles/converter.dir/flags.make
 converters/CMakeFiles/converter.dir/src/utils.cpp.o: ../converters/src/utils.cpp
 converters/CMakeFiles/converter.dir/src/utils.cpp.o: converters/CMakeFiles/converter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object converters/CMakeFiles/converter.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object converters/CMakeFiles/converter.dir/src/utils.cpp.o"
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT converters/CMakeFiles/converter.dir/src/utils.cpp.o -MF CMakeFiles/converter.dir/src/utils.cpp.o.d -o CMakeFiles/converter.dir/src/utils.cpp.o -c "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/converters/src/utils.cpp"
 
 converters/CMakeFiles/converter.dir/src/utils.cpp.i: cmake_force
@@ -130,6 +144,7 @@ converter_OBJECTS = \
 "CMakeFiles/converter.dir/src/global_variables.cpp.o" \
 "CMakeFiles/converter.dir/src/index.cpp.o" \
 "CMakeFiles/converter.dir/src/values.cpp.o" \
+"CMakeFiles/converter.dir/src/columns.cpp.o" \
 "CMakeFiles/converter.dir/src/utils.cpp.o"
 
 # External object files for target converter
@@ -138,10 +153,11 @@ converter_EXTERNAL_OBJECTS =
 converters/libconverter.a: converters/CMakeFiles/converter.dir/src/global_variables.cpp.o
 converters/libconverter.a: converters/CMakeFiles/converter.dir/src/index.cpp.o
 converters/libconverter.a: converters/CMakeFiles/converter.dir/src/values.cpp.o
+converters/libconverter.a: converters/CMakeFiles/converter.dir/src/columns.cpp.o
 converters/libconverter.a: converters/CMakeFiles/converter.dir/src/utils.cpp.o
 converters/libconverter.a: converters/CMakeFiles/converter.dir/build.make
 converters/libconverter.a: converters/CMakeFiles/converter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libconverter.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libconverter.a"
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && $(CMAKE_COMMAND) -P CMakeFiles/converter.dir/cmake_clean_target.cmake
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build/converters" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/converter.dir/link.txt --verbose=$(VERBOSE)
 

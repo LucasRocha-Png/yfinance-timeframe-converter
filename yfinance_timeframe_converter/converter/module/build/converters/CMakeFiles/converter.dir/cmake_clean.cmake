@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/converter.dir/src/columns.cpp.o"
+  "CMakeFiles/converter.dir/src/columns.cpp.o.d"
   "CMakeFiles/converter.dir/src/global_variables.cpp.o"
   "CMakeFiles/converter.dir/src/global_variables.cpp.o.d"
   "CMakeFiles/converter.dir/src/index.cpp.o"

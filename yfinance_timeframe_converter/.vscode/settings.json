@@ -44,6 +44,9 @@
         "typeinfo": "cpp",
         "iostream": "cpp",
         "istream": "cpp",
-        "map": "cpp"
-    }
+        "map": "cpp",
+        "cstring": "cpp",
+        "fstream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

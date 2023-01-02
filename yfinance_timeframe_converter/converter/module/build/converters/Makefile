@@ -130,6 +130,30 @@ converter/fast:
 	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/build
 .PHONY : converter/fast
 
+src/columns.o: src/columns.cpp.o
+.PHONY : src/columns.o
+
+# target to build an object file
+src/columns.cpp.o:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/columns.cpp.o
+.PHONY : src/columns.cpp.o
+
+src/columns.i: src/columns.cpp.i
+.PHONY : src/columns.i
+
+# target to preprocess a source file
+src/columns.cpp.i:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/columns.cpp.i
+.PHONY : src/columns.cpp.i
+
+src/columns.s: src/columns.cpp.s
+.PHONY : src/columns.s
+
+# target to generate assembly for a file
+src/columns.cpp.s:
+	cd "/home/lucas/Área de Trabalho/GITHUB/yfinance-timeframe-converter/yfinance_timeframe_converter/converter/module/build" && $(MAKE) $(MAKESILENT) -f converters/CMakeFiles/converter.dir/build.make converters/CMakeFiles/converter.dir/src/columns.cpp.s
+.PHONY : src/columns.cpp.s
+
 src/global_variables.o: src/global_variables.cpp.o
 .PHONY : src/global_variables.o
 
@@ -235,6 +259,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... converter"
+	@echo "... src/columns.o"
+	@echo "... src/columns.i"
+	@echo "... src/columns.s"
 	@echo "... src/global_variables.o"
 	@echo "... src/global_variables.i"
 	@echo "... src/global_variables.s"

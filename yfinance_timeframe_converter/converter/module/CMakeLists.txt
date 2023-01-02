@@ -13,12 +13,12 @@ add_subdirectory(converters)
 
 #Create Shared Library of main
 add_library(${PROJECT_NAME} SHARED
-				main.cpp
-				main.hpp)
+	    main.cpp
+	    main.hpp)
 
 #Links print_vector library to the project
 target_link_libraries(${PROJECT_NAME}
-                    converter) 
+                      converter) 
 
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)	                      

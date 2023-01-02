@@ -7,9 +7,9 @@
 #endif
 
 extern "C"{
-    API char** convert_index(char** index, int len_index, char** timeframes);
+    API char** convert_index(char** index, int lenght_index, char** timeframes);
 
-    API void convert_values(double** values, char** index, char** converted_index, char** columns);
+    API void convert_values(double* values, int lenght_values, char** index, int lenght_index, char** converted_index, int lenght_coverted_index, char** columns, int lenght_columns);
 
     API void free_array_char(char** array);
 

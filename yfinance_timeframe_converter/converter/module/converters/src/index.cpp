@@ -7,7 +7,7 @@
 #include "../includes/global_variables.hpp"
 
 
-std::vector<std::string> convert_index_(std::vector<std::string>& index, std::string& timeframe_input, std::string& timeframe_output){
+std::vector<std::string> convert_index_(std::vector<std::string>& index, std::string& timeframe_output){
     /*
     Converts the index
     */
@@ -52,7 +52,7 @@ std::vector<std::string> convert_index_(std::vector<std::string>& index, std::st
     int last_value = -1;
     int current_minute = -1;
     int inicial_minute;
-    int loop = 0;
+    unsigned long loop = 0;
     int day_of_week;
     bool should_add;
     for (std::string& date : index){

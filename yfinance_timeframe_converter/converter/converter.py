@@ -17,12 +17,19 @@ else:
 
 # Convert Index Function -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 cpp_convert_index = library.convert_index
-cpp_convert_index.argtypes = [ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, ctypes.POINTER(ctypes.c_char_p)]  # Accepts index, len index, and timeframes
+# Accepts index, len index, and timeframes
+cpp_convert_index.argtypes = [ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, ctypes.POINTER(ctypes.c_char_p)]  
 cpp_convert_index.restype = ctypes.POINTER(ctypes.c_char_p)  # Returns converted index
 
 # Convert Values -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 cpp_convert_values = library.convert_values
-cpp_convert_values.argtypes = []
+# Accepts values, lenght_values, normal index, len normal index, converted index, len converted index, columns and len columns
+cpp_convert_values.argtypes = [
+                            ctypes.POINTER(ctypes.c_double), ctypes.c_int,
+                            ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, 
+                            ctypes.POINTER(ctypes.c_char_p), ctypes.c_int, 
+                            ctypes.POINTER(ctypes.c_char_p), ctypes.c_int
+                            ]
 
 
 # Free memory array -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -44,10 +51,12 @@ def convert_dataframe(data: list):
     timeframes = data[3]
 
 
-    # Converts index
+    # Converts index -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     cpp_index = cpp_convert_index(index, len(index), timeframes)
-    len_index = int(str(cpp_index[0], "UTF-8"))
-    cpp_free_memory_char(cpp_index)
+    lenght_index = int(str(cpp_index[0], "UTF-8"))
+
+    # Values -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    cpp_convert_values(values, len(values), index, len(index), cpp_index, lenght_index, columns, len(columns))
     
 
     
