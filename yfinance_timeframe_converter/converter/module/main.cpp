@@ -35,19 +35,22 @@ extern "C"{
         return p_index;
     }
 
-    API void convert_values(double* values, int lenght_values, char** index, int lenght_index, char** converted_index, int lenght_coverted_index, char** columns, int lenght_columns){
+    API double* convert_values(double* values, int lenght_values, char** index, int lenght_index, char** converted_index, int lenght_coverted_index, char** columns, int lenght_columns){
         // Converts values to vector
         std::vector<double> v_values(values, values + (lenght_values));
         std::vector<std::string> v_index(index, index+lenght_index);
-        std::vector<std::string> v_converted_index(converted_index + 1, converted_index+lenght_coverted_index); // The +1 is for removing the len of the index that was added to the array
+        std::vector<std::string> v_converted_index(converted_index + 1, converted_index+lenght_coverted_index+1); // The +1 is for removing the len of the index that was added to the array
         std::vector<std::string> v_columns(columns, columns+lenght_columns);
 
         // Create mask for columns
         std::vector<std::string> mask = create_columns_mask(v_columns);
 
         // Converts values
-        convert_values_(v_values, v_index, v_converted_index, mask);
+        std::vector<double> conveted_values = convert_values_(v_values, v_index, v_converted_index, mask);
 
+        double* converted_values_p = vector_to_p(conveted_values);
+
+        return converted_values_p;
     }
 
 
@@ -55,7 +58,7 @@ extern "C"{
         delete[] array;
     }
 
-    API void free_array_double(double** array){
+    API void free_array_double(double* array){
         delete[] array;
     }
 

@@ -49,6 +49,16 @@ char** vector_to_p(std::vector<std::string>& list){
 }
 
 
+double* vector_to_p(std::vector<double>& list){
+    int size = list.size();
+    double* arr = new double[size];
+    for (int i = 0; i < size; i++) {
+        arr[i] = list[i];
+    }
+    return arr;
+}
+
+
 double return_value_based_on_mask(std::vector<double>& list, std::string& mask){
     double returned_value;
     if (mask == "first"){

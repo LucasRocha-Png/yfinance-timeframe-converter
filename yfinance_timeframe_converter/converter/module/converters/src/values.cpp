@@ -4,7 +4,7 @@
 #include "../includes/values.hpp"
 #include "../includes/utils.hpp"
 
-void convert_values_(std::vector<double>& values, std::vector<std::string>& index, std::vector<std::string>& converted_index, std::vector<std::string>& list_mask){
+std::vector<double> convert_values_(std::vector<double>& values, std::vector<std::string>& index, std::vector<std::string>& converted_index, std::vector<std::string>& list_mask){
 
     // Get lenghts
     int lenght_mask = list_mask.size();
@@ -85,4 +85,6 @@ void convert_values_(std::vector<double>& values, std::vector<std::string>& inde
         std::cout << "\n";
     }
     */
+
+   return result;
 }

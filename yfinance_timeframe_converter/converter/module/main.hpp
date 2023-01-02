@@ -9,9 +9,9 @@
 extern "C"{
     API char** convert_index(char** index, int lenght_index, char** timeframes);
 
-    API void convert_values(double* values, int lenght_values, char** index, int lenght_index, char** converted_index, int lenght_coverted_index, char** columns, int lenght_columns);
+    API double* convert_values(double* values, int lenght_values, char** index, int lenght_index, char** converted_index, int lenght_coverted_index, char** columns, int lenght_columns);
 
     API void free_array_char(char** array);
 
-    API void free_array_double(double** array);
+    API void free_array_double(double* array);
 }

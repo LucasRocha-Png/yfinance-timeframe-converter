@@ -1,2 +1,0 @@
-1mo = each month, correctally.
-3mo = Each 3 months, correctally. Concat months = (12, 03, 06, 09). Each month is the beggining!

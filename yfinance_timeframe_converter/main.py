@@ -11,21 +11,31 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     Converts YFinance DataFrame Timeframes
     """
 
+    # Renames inputs
     timeframe_input = renames_timeframe(timeframe_input)
     timeframe_output = renames_timeframe(timeframe_output)
 
+    # If input is the same as output, return data
     if timeframe_input == timeframe_output:
         return data
 
+    # If checking == True, do basic checking
     if checking:
         basic_checker(data)
 
+    # Converts data to c++ format
     converted_data = format_data(data, timeframe_input, timeframe_output)
 
+    # If Checking == True, do some complex checking
     if checking:
         checker(converted_data, data)
 
-    convert_dataframe(converted_data)
+    # Converts dataframe
+    df = convert_dataframe(converted_data)
+   
+    return df    
+
+
 
     
 
@@ -35,16 +45,14 @@ if __name__ == "__main__":
 
 
     timeframe = "1d"
-    output_timeframe = "1yr"
-    df = download_dataframe("AAPL", timeframe)
+    output_timeframe = "1mo"
+    df = download_dataframe("PETR4.SA", timeframe)
 
     start = time.time()
-    
-    for i in range(1):
-        timeframe_converter(df, timeframe, output_timeframe, True)
-
+    new_df = timeframe_converter(df, timeframe, output_timeframe, True)
     end = time.time()
+
+    print(new_df)
+
     print("\n")
-    print(timeframe, " -> ", output_timeframe)
-    print("-"*10)
     print(f"Running Seconds:", round(end - start, 10))
