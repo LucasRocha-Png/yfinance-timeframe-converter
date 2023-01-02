@@ -1,5 +1,5 @@
-from utils.utils import exception_message
-from formater.formater import format_cpp_row_to_python
+from ..utils.utils import exception_message
+from ..formater.formater import format_cpp_row_to_python
 import pandas as pd
 
 def return_error_by_list(list_errors: list, data: pd.core.frame.DataFrame, timeframes: list) -> None:

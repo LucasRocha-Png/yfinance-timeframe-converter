@@ -1,5 +1,5 @@
-from formater.formater import format_cpp_row_to_python
-from utils.utils import exception_message
+from ..formater.formater import format_cpp_row_to_python
+from ..utils.utils import exception_message
 import pandas as pd
 import numpy as np
 import ctypes
@@ -38,7 +38,6 @@ cpp_convert_values.restype = ctypes.POINTER(ctypes.c_double)
 # Free memory array -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 cpp_free_memory_char = library.free_array_char
 cpp_free_memory_char.argtype = ctypes.POINTER(ctypes.c_char_p)
-
 cpp_free_memory_double = library.free_array_double
 cpp_free_memory_double.argtype = ctypes.POINTER(ctypes.c_double)
 

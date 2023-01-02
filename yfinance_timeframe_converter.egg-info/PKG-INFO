@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yfinance-timeframe-converter
+Version: 0.0.1
+Summary: Converts YFinance's tables in other timeframe in an faster way
+Home-page: UNKNOWN
+Author: Lucas Rocha
+Author-email: lucasrocha.png@gmail.com
+License: UNKNOWN
+Keywords: python,yfinance,changer,yahoo,finance
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# yfinance-timeframe-changer
+
+

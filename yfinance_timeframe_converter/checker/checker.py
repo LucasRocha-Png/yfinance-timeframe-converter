@@ -1,6 +1,6 @@
-from formater.formater import format_cpp_row_to_python
-from checker.return_error import return_error_by_list
-from utils.utils import exception_message
+from ..formater.formater import format_cpp_row_to_python
+from ..checker.return_error import return_error_by_list
+from ..utils.utils import exception_message
 import pandas as pd
 import ctypes
 import sys
