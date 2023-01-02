@@ -18,20 +18,6 @@ bool isin(std::string& object, std::vector<std::string>& list){
     return false;
 }
 
-int get_index(std::vector<std::string>& list, std::string& word){
-    /*
-    Get the index of the value from list, if not found, return -1
-    */
-
-    long int index = 0;
-    for (std::string word_ : list){
-        if (word_ == word)
-            {return index;}
-        index++;
-    }
-    return -1;
-}
-
 int getDayOfWeek(int day, int month, int year) {
     /*
     Get day of the weak after passed day, month and year
@@ -111,6 +97,21 @@ std::vector<std::vector<double>> to_matrix(const std::vector<double>& list, int 
         resized_vector.back().push_back(list[i]);
     }
     return resized_vector;
+}
+
+std::vector<std::vector<double>> transpose(const std::vector<std::vector<double>>& matrix) {
+    int rows = matrix.size();
+    int cols = matrix[0].size();
+
+    std::vector<std::vector<double>> transposed(cols, std::vector<double>(rows));
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            transposed[j][i] = matrix[i][j];
+        }
+    }
+
+    return transposed;
 }
 
 

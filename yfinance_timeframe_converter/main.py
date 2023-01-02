@@ -35,13 +35,16 @@ if __name__ == "__main__":
 
 
     timeframe = "1d"
+    output_timeframe = "1yr"
     df = download_dataframe("AAPL", timeframe)
 
     start = time.time()
     
     for i in range(1):
-        timeframe_converter(df, timeframe, "1wk", True)
+        timeframe_converter(df, timeframe, output_timeframe, True)
 
     end = time.time()
+    print("\n")
+    print(timeframe, " -> ", output_timeframe)
     print("-"*10)
     print(f"Running Seconds:", round(end - start, 10))
