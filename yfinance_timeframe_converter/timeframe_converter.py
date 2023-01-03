@@ -42,25 +42,3 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     df = convert_dataframe(converted_data)
    
     return df    
-
-
-
-    
-
-if __name__ == "__main__":
-    from utils.utils import download_dataframe
-    import time
-
-
-    timeframe = "1d"
-    output_timeframe = "1mo"
-    df = download_dataframe("PETR4.SA", timeframe)
-
-    start = time.time()
-    new_df = timeframe_converter(df, timeframe, output_timeframe, True)
-    end = time.time()
-
-    print(new_df)
-
-    print("\n")
-    print(f"Running Seconds:", round(end - start, 10))

@@ -1,5 +1,5 @@
 from .timeframe_converter import timeframe_converter
-from .available_timeframes import yfinance_available_timeframes, converter_available_inputs, converter_available_outputs
+from .available_timeframes import yfinance_available_timeframes, converter_available_inputs, converter_available_outputs, available_convertions
 
 VERSION = (1, 0, 1)
 

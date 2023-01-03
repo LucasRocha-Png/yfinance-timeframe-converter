@@ -8,7 +8,15 @@ import pandas as pd
 
 def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str, checking:bool = True) -> pd.core.frame.DataFrame:
     """
-    Converts YFinance DataFrame Timeframes
+    Converts YFinance dataframe by the passed timeframe.
+
+    Returns the converted DataFrame.
+
+    Arguments:
+    data - pd.DataFrame -> The dataframe you desire to convert
+    timeframe_input - string -> The timeframe of the DataFrame
+    timeframe_output - string -> The timeframe you desire to convert to
+    checking - bool -> Checks if all variables are valid, if False, the code will run about 10% faster, but 
     """
 
     # Renames inputs
@@ -34,25 +42,3 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     df = convert_dataframe(converted_data)
    
     return df    
-
-
-
-    
-
-if __name__ == "__main__":
-    from utils.utils import download_dataframe
-    import time
-
-
-    timeframe = "1d"
-    output_timeframe = "1mo"
-    df = download_dataframe("PETR4.SA", timeframe)
-
-    start = time.time()
-    new_df = timeframe_converter(df, timeframe, output_timeframe, True)
-    end = time.time()
-
-    print(new_df)
-
-    print("\n")
-    print(f"Running Seconds:", round(end - start, 10))
