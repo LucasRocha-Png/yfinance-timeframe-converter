@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\src\global_variables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\src\index.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\src\values.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\src\columns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\src\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\includes\global_variables.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\includes\index.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\includes\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\includes\columns.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\includes\utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\converters\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E2A627C8-D8B7-344F-A0E7-B6141BDC843F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{93D7A454-9026-3471-88DE-9754300D466F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

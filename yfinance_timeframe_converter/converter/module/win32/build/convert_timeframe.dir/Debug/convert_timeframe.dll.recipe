@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\lucas\OneDrive\Área de Trabalho\Projeto\PACKAGES\yfinance-timeframe-changer\yfinance_timeframe_converter\converter\module\win32\build\Debug\convert_timeframe.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

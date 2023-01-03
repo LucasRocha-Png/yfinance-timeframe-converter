@@ -29,7 +29,7 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
 
     # If checking == True, do basic checking
     if checking:
-        basic_checker(data)
+        data = basic_checker(data)
 
     # Converts data to c++ format
     converted_data = format_data(data, timeframe_input, timeframe_output)

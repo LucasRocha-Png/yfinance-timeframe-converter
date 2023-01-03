@@ -15,4 +15,8 @@ def basic_checker(data: pd.core.frame.DataFrame) -> None:
     for column in data.columns:
         type_ = data[column].dtype
         if type_ != float and type_ != int:
-            exception_message(f"The values from {column} column is not allowed")
+            try:
+                data[column] = data[column].apply(lambda x: float(x))
+            except:
+                exception_message(f"The values from {column} column is not float or int type!")
+    return data
