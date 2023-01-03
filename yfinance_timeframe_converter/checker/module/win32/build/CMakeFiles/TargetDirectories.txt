@@ -1,4 +1,0 @@
-C:/Users/lucas/OneDrive/Área de Trabalho/Projeto/PACKAGES/yfinance-timeframe-changer/yfinance_timeframe_converter/checker/module/win32/build/CMakeFiles/checkers.dir
-C:/Users/lucas/OneDrive/Área de Trabalho/Projeto/PACKAGES/yfinance-timeframe-changer/yfinance_timeframe_converter/checker/module/win32/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/lucas/OneDrive/Área de Trabalho/Projeto/PACKAGES/yfinance-timeframe-changer/yfinance_timeframe_converter/checker/module/win32/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/lucas/OneDrive/Área de Trabalho/Projeto/PACKAGES/yfinance-timeframe-changer/yfinance_timeframe_converter/checker/module/win32/build/checkers/CMakeFiles/checker.dir
