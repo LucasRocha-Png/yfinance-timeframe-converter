@@ -7,7 +7,7 @@ with open("README.md", "r") as rdm:
 # Setting up
 setup(
     name="yfinance_timeframe_converter",
-    version='0.0.2',
+    version='0.0.3',
     author="Lucas Rocha", 
     author_email="lucasrocha.png@gmail.com",
     description=DESCRIPTION,
@@ -19,8 +19,10 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: C++",
         "License :: OSI Approved :: Apache Software License",
-        "Operating System :: Unix"
+        "Operating System :: Unix",
+        "Operating System :: Microsoft :: Windows"
     ]
 )
