@@ -19,15 +19,15 @@ import yfinance_timeframe_converter as converter
 from pandas_datareader import data as pdr
 import yfinance as yf
 
-ticket = "APPL"
-input_timeframe = "1h"
-output_timeframe  = "1d"
+ticket = "AAPL"
+input_timeframe = "1d"
+output_timeframe  = "1wk"
 
 yf.pdr_override()  
-df = pdr.get_data_yahoo(tickers=ticket, interval=timeframe_input)
+df = pdr.get_data_yahoo(tickers=ticket, interval=input_timeframe)
 
 # Pass the dataframe, the timeframe of the Dataframe, and the timeframe desired. Returns the converted DataFrame
-converted_timeframe = converter.timeframe_converter(df, timeframe_input, timeframe_output)
+converted_timeframe = converter.timeframe_converter(df, input_timeframe, output_timeframe)
 ```
 
 ### How many timeframes are available to use?
