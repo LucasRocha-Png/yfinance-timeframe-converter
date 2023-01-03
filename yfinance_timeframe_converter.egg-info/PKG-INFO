@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: yfinance-timeframe-converter
-Version: 0.0.3
+Version: 0.0.4
 Summary: Converts YFinance's tables in other timeframe in an faster way
-Home-page: UNKNOWN
+Home-page: https://github.com/LucasRocha-Png/yfinance-timeframe-converter
 Author: Lucas Rocha
 Author-email: lucasrocha.png@gmail.com
 License: UNKNOWN
