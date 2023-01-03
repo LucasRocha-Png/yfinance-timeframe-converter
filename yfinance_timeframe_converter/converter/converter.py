@@ -11,9 +11,9 @@ plataform = sys.platform
 archive_folder = os.path.dirname(__file__)
 
 if plataform == "win32": 
-    library = ctypes.CDLL(f"{archive_folder}/module/win32/build/Debug/convert_timeframe.dll")   	
+    library = ctypes.CDLL(f"{archive_folder}/module/build/Debug/convert_timeframe.dll")   	
 else:
-    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libconvert_timeframe.so")
+    library = ctypes.CDLL(f"{archive_folder}/module/build/libconvert_timeframe.so")
        
 
 

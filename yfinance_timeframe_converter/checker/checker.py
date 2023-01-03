@@ -10,9 +10,9 @@ plataform = sys.platform
 archive_folder = os.path.dirname(__file__)
 
 if plataform == "win32":
-    library = ctypes.CDLL(f"{archive_folder}/module/win32/build/Debug/checkers.dll")    
+    library = ctypes.CDLL(f"{archive_folder}/module/build/Debug/checkers.dll")    
 else:
-    library = ctypes.CDLL(f"{archive_folder}/module/linux/build/libcheckers.so")	
+    library = ctypes.CDLL(f"{archive_folder}/module/build/libcheckers.so")	
     
 # Imports function checker from cpp -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 cpp_checker = library.checker
