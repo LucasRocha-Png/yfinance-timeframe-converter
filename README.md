@@ -13,7 +13,7 @@ Uses C++ functions to make all process faster, converting large amount of data i
 ### How to convert a DataFrame
 The `timeframe_converter` function allows you to convert your DataFrame.
 
-To convert a DataFrame, pass the original DataFrame, the DataFrame's timeframe, and the output desired timeframe
+To convert a DataFrame, pass the original DataFrame, the DataFrame's timeframe, and the output desired timeframe.
 ```python
 import yfinance_timeframe_converter as converter
 from pandas_datareader import data as pdr
