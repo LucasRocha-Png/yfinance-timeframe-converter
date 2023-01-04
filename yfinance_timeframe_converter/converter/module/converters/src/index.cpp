@@ -49,11 +49,13 @@ std::vector<std::string> convert_index_(std::vector<std::string>& index, std::st
 
     // Last value of the loop
     int last_value = -1;
+    int last_day_of_week = 1;
     int current_minute = -1;
     int inicial_minute;
     unsigned long loop = 0;
     int day_of_week;
     bool should_add;
+
     for (std::string& date : index){
         int value = std::stoi(date.substr(location_value_.first, location_value_.second));
         should_add = false;
@@ -77,10 +79,11 @@ std::vector<std::string> convert_index_(std::vector<std::string>& index, std::st
             // If its a week!
             else if(output_type == "week"){
                 day_of_week = list_day_week[loop];
-                if (day_of_week == 1 && value != last_value){
+                if (day_of_week <= last_day_of_week && value != last_value){
                     should_add = true;
                     last_value = value;
                 }
+                last_day_of_week = day_of_week;
             }
 
             // If its a hour
