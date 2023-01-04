@@ -5,9 +5,9 @@ Instead of calling the yFinance's API again, why not just to convert your curren
 
 This is what **yfinance-timeframe-converter** does.
 
-Convert your DataFrame to up to **33 timeframes** of your choise, **22 more than the yFinance** timeframes available;
+Convert your DataFrame to up to **33 timeframes** of your choise, **22 more than the yFinance** timeframes available.
 
-Uses C++ functions to make all process faster, converting large amount of data in less than 0.1 seconds;
+Uses C++ functions to make all process faster, converting large amount of data in less than 0.1 seconds.
 
 ## How to use
 ### How to convert a DataFrame
