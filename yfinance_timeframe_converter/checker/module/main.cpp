@@ -42,7 +42,7 @@ extern "C"
 
 
     API void free_array(int* array){
-        delete[] array;
+        free(array);
     }
 
 }

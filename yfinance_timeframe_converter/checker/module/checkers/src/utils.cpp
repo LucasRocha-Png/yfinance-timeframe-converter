@@ -18,7 +18,7 @@ int get_index(std::vector<std::string>& list, std::string& word){
 int* vector_to_p(std::vector<int>& list){
     int lenght_list = list.size();
 
-    int* new_list = new int[lenght_list];
+    int* new_list = (int*) malloc(lenght_list * sizeof(int));
     for (int i = 0; i < lenght_list; i++){
         new_list[i] = list[i];
     }

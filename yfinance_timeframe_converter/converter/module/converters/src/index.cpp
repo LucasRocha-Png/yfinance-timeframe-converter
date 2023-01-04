@@ -1,6 +1,5 @@
 #include <vector>
 #include <string>
-#include <iostream>
 
 #include "../includes/index.hpp"
 #include "../includes/utils.hpp"

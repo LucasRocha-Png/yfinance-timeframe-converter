@@ -1,7 +1,6 @@
 #include <vector>
 #include <string>
 #include <iterator>
-#include <iostream>
 
 #include "main.hpp"
 #include "converters/includes/index.hpp"
@@ -55,11 +54,11 @@ extern "C"{
 
 
     API void free_array_char(char** array){
-        delete[] array;
+        free(array);
     }
 
     API void free_array_double(double* array){
-        delete[] array;
+        free(array);
     }
 
 }
