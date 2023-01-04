@@ -53,7 +53,10 @@ extern "C"{
     }
 
 
-    API void free_array_char(char** array){
+    API void free_array_char(char** array, int size){
+        for (int i = 0; i < size; i++) {
+            free(array[i]);
+        }
         free(array);
     }
 

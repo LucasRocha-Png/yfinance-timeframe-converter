@@ -34,13 +34,11 @@ int getDayOfWeek(int day, int month, int year) {
 
 char** vector_to_p(std::vector<std::string>& list){
     // Aloca a memória para a char**
-    int lengh_list = list.size();
-
-    char** arr = (char**) malloc((lengh_list + 1) * sizeof(char*));
+    char** arr = (char**) malloc((list.size() + 1) * sizeof(char*));
 
     // Copia os elementos da vector para a char**
-    for (int i = 0; i < lengh_list; i++) {
-        arr[i] = new char[list[i].size() + 1];
+    for (size_t i = 0; i < list.size(); i++) {
+        arr[i] = (char*) malloc((list[i].size() + 1) * sizeof(char));
         strcpy(arr[i], list[i].c_str());
     }
 
@@ -52,9 +50,9 @@ char** vector_to_p(std::vector<std::string>& list){
 
 
 double* vector_to_p(std::vector<double>& list){
-    int lenght_list = list.size();
-    double* arr = (double*) malloc(lenght_list * sizeof(int));
-    for (int i = 0; i < lenght_list; i++) {
+    int size = list.size();
+    double* arr = (double*) malloc(size * sizeof(double));
+    for (int i = 0; i < size; i++) {
         arr[i] = list[i];
     }
     return arr;

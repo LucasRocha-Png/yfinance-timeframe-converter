@@ -37,7 +37,8 @@ cpp_convert_values.restype = ctypes.POINTER(ctypes.c_double)
 
 # Free memory array -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 cpp_free_memory_char = library.free_array_char
-cpp_free_memory_char.argtype = ctypes.POINTER(ctypes.c_char_p)
+cpp_free_memory_char.argtypes = [ctypes.POINTER(ctypes.c_char_p), ctypes.c_int]
+
 cpp_free_memory_double = library.free_array_double
 cpp_free_memory_double.argtype = ctypes.POINTER(ctypes.c_double)
 
@@ -69,7 +70,7 @@ def convert_dataframe(data: list) -> pd.core.frame.DataFrame:
     converted_values = np.array(converted_values).reshape(-1, lenght_index).tolist()
 
     # Free memory -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    cpp_free_memory_char(index_result)
+    cpp_free_memory_char(index_result, lenght_index)
     cpp_free_memory_double(values_result)
 
 
