@@ -33,16 +33,16 @@ int getDayOfWeek(int day, int month, int year) {
 
 
 char** vector_to_p(std::vector<std::string>& list){
-    // Aloca a memória para a char**
+    // Allocs memory
     char** arr = (char**) malloc((list.size() + 1) * sizeof(char*));
 
-    // Copia os elementos da vector para a char**
+    // Copy each string and put inside array
     for (size_t i = 0; i < list.size(); i++) {
         arr[i] = (char*) malloc((list[i].size() + 1) * sizeof(char));
         strcpy(arr[i], list[i].c_str());
     }
 
-    // Adiciona um elemento NULL no final da char**
+    // Add null value at the end of array
     arr[list.size()] = NULL;
 
     return arr;
