@@ -13,9 +13,13 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     Returns the converted DataFrame.
 
     Arguments:
+
     data - pd.DataFrame -> The dataframe you desire to convert
+
     timeframe_input - string -> The timeframe of the DataFrame
+
     timeframe_output - string -> The timeframe you desire to convert to
+    
     checking - bool -> Checks if all variables are valid, if False, the code will run about 10% faster, but 
     """
 
