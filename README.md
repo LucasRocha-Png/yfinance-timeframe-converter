@@ -34,6 +34,13 @@ end = time.time()
 print('Execution time:', end - start, 'seconds')
 ```
 
+### Arguments
+- `data` - pd.DataFrame -> The dataframe you desire to convert
+- `timeframe_input` - string -> The timeframe of the DataFrame
+- `timeframe_output` - string -> The timeframe you desire to convert to
+- `checking` - bool -> Checks if all variables are valid, if False, the code will run about 10% faster, you can have serious errors
+
+#
 ### How many timeframes are available to use?
 ```python
 import yfinance_timeframe_converter as converter
