@@ -20,7 +20,7 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
 
     timeframe_output - string -> The timeframe you desire to convert to
     
-    checking - bool -> Checks if all variables are valid, if False, the code will run about 10% faster, but 
+    checking - bool -> Checks if all variables are valid, if False, the code will run about 10% faster, but you can have serious errors
     """
 
     # Renames inputs
