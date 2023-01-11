@@ -43,7 +43,7 @@ def checker(converted_data: list, data: pd.core.frame.DataFrame) -> None:
     columns = converted_data[1]
     timeframes = converted_data[3]
 
-    errors = cpp_checker(index, len(index), columns, len(columns),timeframes)
+    errors = cpp_checker(index, len(index), columns, len(columns), timeframes)
 
     list_errors = format_cpp_row_to_python(errors, 4, "int")
 

@@ -9,8 +9,8 @@ def basic_checker(data: pd.core.frame.DataFrame) -> None:
     if type(data) != pd.core.frame.DataFrame:
         exception_message("Data is not a available format! Data should be a Pandas DataFrame")
 
-    if data.shape[0] == 0 or data.shape[1] == 0:
-        exception_message("Data has no rows or columns!")
+    if data.shape[0]<= 2 or data.shape[1] == 0:
+        exception_message("Data has no rows or columns enough!")
 
     for column in data.columns:
         type_ = data[column].dtype

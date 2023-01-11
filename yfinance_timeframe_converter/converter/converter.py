@@ -60,10 +60,11 @@ def convert_dataframe(data: list) -> pd.core.frame.DataFrame:
     index_result = cpp_convert_index(index, len(index), timeframes)
     lenght_index = int(str(index_result[0], "UTF-8"))
     converted_index = format_cpp_row_to_python(index_result, lenght_index, "string")
-    
+
     # Converts Values -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     values_result = cpp_convert_values(values, len(values), index, len(index), index_result, lenght_index, columns, len(columns))
     lenght_columns = len(converted_columns)
+
 
     converted_index = converted_index[1:]
     converted_values = format_cpp_row_to_python(values_result, ((lenght_index) * lenght_columns)-1, "double")

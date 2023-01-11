@@ -63,6 +63,8 @@ def format_cpp_row_to_python(row: list, len_row: int, type: str) -> list:
     return new_row
 
 
+minutes_timeframes = ["1m", "2m", "3m", "4m", "5m", "6m", "10m", "12m", "15m", "20m", "30m", "60m", "90m", "1h", "2h", "3h", "4h", "6h", "8h", "12h"]
+
 def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_output: str) -> list:
     """
     Formats DataFrame to a format that C++ accepts
@@ -72,7 +74,13 @@ def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_o
     #data = data.dropna(axis=0)
     data = data.fillna(0)
 
-    index = data.index.astype(str).to_list()
+    
+    if timeframe_input not in minutes_timeframes:
+        index = data.index.astype(str).to_list()
+        index = [date[:10] for date in index]
+    else:
+        index = data.index.astype(str).to_list()    
+        
     index = format_python_row_to_cpp(index, "string")
 
     columns = data.columns.to_list()

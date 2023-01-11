@@ -4,8 +4,6 @@ def exception_message(message: str) -> None:
     Raises a excepetion message
     """
 
-    print(message)
-    print("\n\n")
     raise Exception(message)
 
 
