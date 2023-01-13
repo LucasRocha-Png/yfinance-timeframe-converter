@@ -27,6 +27,11 @@ def timeframe_converter(data: pd.core.frame.DataFrame, timeframe_input: str, tim
     timeframe_input = renames_timeframe(timeframe_input)
     timeframe_output = renames_timeframe(timeframe_output)
 
+    # Drop values, Fill na
+    data = data.dropna(how="all")
+    data = data.fillna(0)
+
+
     # If input is the same as output, return data
     if timeframe_input == timeframe_output:
         return data

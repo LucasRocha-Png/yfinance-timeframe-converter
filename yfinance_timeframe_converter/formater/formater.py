@@ -70,10 +70,6 @@ def format_data(data: pd.core.frame.DataFrame, timeframe_input: str, timeframe_o
     Formats DataFrame to a format that C++ accepts
     """
 
-
-    #data = data.dropna(axis=0)
-    data = data.fillna(0)
-
     
     if timeframe_input not in minutes_timeframes:
         index = data.index.astype(str).to_list()
